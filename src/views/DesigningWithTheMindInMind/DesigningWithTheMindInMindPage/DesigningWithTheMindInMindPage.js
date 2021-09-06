@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function DesigningWithTheMindInMind() {
+function DesigningWithTheMindInMindPage() {
 
     return (
         <div>
@@ -11,4 +11,4 @@ function DesigningWithTheMindInMind() {
 }
 
 
-export default DesigningWithTheMindInMind;
+export default DesigningWithTheMindInMindPage;

@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Route, Switch, HashRouter} from "react-router-dom";
-import ChapterTwoSimilarityFiveStar from '../components/DesigningWithTheMindInMind/ChapterTwoSimilarityFiveStar';
-import DesigningWithTheMindInMindHero from '../components/DesigningWithTheMindInMind/DesigningWithTheMindInMindHero';
-import DesigningWithTheMindInMind from '../pages/DesigningWithTheMindInMindPage';
-import Hero from '../pages/Hero';
+import ChapterTwoSimilarityFiveStar from '../views/DesigningWithTheMindInMind/DesigningWithTheMindInMindChapterTwo/ChapterTwoSimilarityFiveStar';
+import DesigningWithTheMindInMindPage from '../views/DesigningWithTheMindInMind/DesigningWithTheMindInMindPage/DesigningWithTheMindInMindPage';
+import { MainPage } from '../views/Main/MainPage/MainPage';
 
 
 const ROUTES = [
@@ -11,7 +10,7 @@ const ROUTES = [
         path: "/",
         key: "ROOT",
         exact: true,
-        component: () => <Hero />,
+        component: () => <MainPage />,
     },
     {
         path: "/designingwiththemindinmind",
@@ -23,9 +22,7 @@ const ROUTES = [
                 key: "DESIGNINGWITHTHEMINDINMIND",
                 exact: true,
                 component: () => (
-                    <DesigningWithTheMindInMind>
-                        <DesigningWithTheMindInMindHero />
-                    </DesigningWithTheMindInMind>
+                        <DesigningWithTheMindInMindPage />
                 )
             },
             {

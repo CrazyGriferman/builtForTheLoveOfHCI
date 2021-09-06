@@ -1,12 +1,10 @@
 import React from 'react';
 
-function Hero() {
-    
+
+export function MainPage() {
     return (
         <div>
             hello
         </div>
     );
 }
-
-export default Hero;

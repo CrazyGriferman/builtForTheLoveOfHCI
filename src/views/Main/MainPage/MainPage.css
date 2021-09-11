@@ -28,7 +28,7 @@
   background: #0bb;
 }
 
-#four {
+.four {
   background: #00dfdf;
 }
 
@@ -46,4 +46,12 @@
 
 ::-webkit-scrollbar {
   display: none; /* remove scrollbar */
+}
+
+.content {
+  position: fixed;
+  width: 5vw;
+  height: 5vh;
+  z-index: 100;
+  left: 10vw;
 }

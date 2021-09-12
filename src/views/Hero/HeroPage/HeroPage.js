@@ -8,7 +8,8 @@ export function HeroPage() {
 
   const toggleLink = () => {
     RouterHistory.push(
-      "/main/designingwiththemindinmind/chaptertwosimilarityfivestar"
+      /* "/main/designingwiththemindinmind/chaptertwosimilarityfivestar" */
+      "/main"
     );
   };
 

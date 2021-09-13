@@ -6,7 +6,7 @@ import { useHistory } from "react-router";
 export function HeroPage() {
   const RouterHistory = useHistory();
 
-  const toggleLink = () => {
+  const toggleLink = (urlLink) => {
     RouterHistory.push(
       /* "/main/designingwiththemindinmind/chaptertwosimilarityfivestar" */
       "/main"

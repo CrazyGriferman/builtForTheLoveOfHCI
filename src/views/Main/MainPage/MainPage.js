@@ -11,6 +11,7 @@ export function MainPage() {
   const RouterHistory = useHistory();
 
   useEffect(() => {
+    /* bug: 翻页效果必须一页一页来，现在点击后面的页面仍然能够翻 */
     /* 点击翻页效果 */
     let pages = document.getElementsByClassName("page");
     for (let i = 0; i < pages.length; i++) {
@@ -49,15 +50,16 @@ export function MainPage() {
           </div>
           <div className="page ">
             <div
+              className="chapter"
               onClick={() => {
                 console.log(1);
                 RouterHistory.push(
                   "/main/designingwiththemindinmind/chaptertwosimilarityfivestar"
                 );
               }}
-              style={{ zIndex: "100" }}
             >
-              543543你好
+              543543你好54325436457654765 675436453654765475436534654
+              64537645765765475467546 7657564765756
             </div>
           </div>
           <div className="page pageCover">

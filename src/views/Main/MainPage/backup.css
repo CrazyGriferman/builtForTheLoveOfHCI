@@ -78,11 +78,10 @@ p {
 .book .page::before {
   content: "";
   position: absolute;
-  /* 这里加了会让原来的html元素的大小变为最小，导致鼠标点击事件失灵 */
-  /* top: 0;
+  top: 0;
   bottom: 0;
   left: 0;
-  right: 0; */
+  right: 0;
   background: rgba(0, 0, 0, 0);
   transition: background 0.7s;
   z-index: 2;
@@ -181,7 +180,7 @@ p {
 
 /* pageCover */
 
-.page .chapter {
+#test {
   z-index: 10;
   cursor: pointer;
 }

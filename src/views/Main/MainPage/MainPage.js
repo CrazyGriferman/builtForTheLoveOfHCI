@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 import oldBookPage from "../../../assets/old-book-page.jpeg";
+import designingImg from "../../../assets/designing-with-the-mind-in-mind.jpeg";
+import dontMakeMeThinkImg from "../../../assets/dont-make-me-think.jpeg";
+import designingInterfacesImg from "../../../assets/designing-interfaces.jpeg";
+import webFormDesignImg from "../../../assets/web-form-design.jpeg";
 import "./MainPage.css";
 
 export function MainPage() {
@@ -34,14 +38,60 @@ export function MainPage() {
     <>
       <div className="book">
         <div id="pages" className="pages">
-          <div className="page">test</div>
-          <div className="page"></div>
-          <div className="page"></div>
-          <div className="page"></div>
-          <div className="page"></div>
-          <div className="page"></div>
-          <div className="page"></div>
-          <div className="page"></div>
+          <div className="page page1">test</div>
+          <div className="page page2">
+            <img
+              src={designingImg}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                position: "relative",
+              }}
+            />
+          </div>
+          <div className="page page3">234</div>
+          <div className="page page4">
+            <img
+              src={dontMakeMeThinkImg}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                position: "relative",
+              }}
+            />
+          </div>
+          <div className="page page5">5342345</div>
+          <div className="page page6">
+            <img
+              src={designingInterfacesImg}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                position: "relative",
+              }}
+            />
+          </div>
+          <div className="page page7">12321</div>
+          <div className="page page8">
+            <img
+              src={webFormDesignImg}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                position: "relative",
+              }}
+            />
+          </div>
+          <div className="page page9">12321</div>
+          <div className="page page9">12321</div>
         </div>
       </div>
     </>

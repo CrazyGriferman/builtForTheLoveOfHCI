@@ -9,13 +9,11 @@ import "./MainPage.css";
 
 export function MainPage() {
   const RouterHistory = useHistory();
-  window.addEventListener("scroll", () => {
-    console.log("scrolled");
-  });
   useEffect(() => {
     /* bug: 翻页效果必须一页一页来，现在点击后面的页面仍然能够翻 */
+    /* 目前想到的解决办法： 让某个事件在n秒内只能被监听到一次 */
     /* 点击翻页效果 */
-    let pages = document.getElementsByClassName("page");
+    const pages = document.getElementsByClassName("page");
 
     for (let i = 0; i < pages.length; i++) {
       let page = pages[i];
@@ -67,9 +65,9 @@ export function MainPage() {
             <div
               className="chapter"
               onClick={() => {
-                console.log(1);
                 RouterHistory.push(
-                  "/main/designingwiththemindinmind/chaptertwosimilarityfivestar"
+                  "/main/designingwiththemindinmind"
+                  /* "/main/designingwiththemindinmind/chaptertwosimilarityfivestar" */
                 );
               }}
             >

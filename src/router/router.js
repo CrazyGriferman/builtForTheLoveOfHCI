@@ -30,6 +30,12 @@ const ROUTES = [
         component: RenderRoutes,
         routes: [
           {
+            path: "/main/designingwiththemindinmind",
+            key: "DESIGNINGWITHTHEMINDINMIND_PAGE",
+            exact: true,
+            component: () => <DesigningWithTheMindInMindPage />,
+          },
+          {
             path: "/main/designingwiththemindinmind/chaptertwosimilarityfivestar",
             key: "DESIGNINGWITHTHEMINDINMIND_CHAPTERTWO_SIMILARITY_FIVESTAR",
             exact: true,

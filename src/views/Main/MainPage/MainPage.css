@@ -1,6 +1,7 @@
 *,
 * :before,
 * :after {
+  touch-action: none; /*   这条很关键，用来防止所有的默认行为 */
   box-sizing: border-box;
 }
 
@@ -22,7 +23,8 @@ body {
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
   padding: 2em 0;
-  line-height: 1.5em;
+
+  /* line-height: 1.5em; */
 }
 p {
   margin-top: 8vw;
@@ -70,7 +72,7 @@ p {
   transition: transform 1.4s;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  /* cursor: pointer; */
+  cursor: pointer;
   /* user-select: none; */
   background-color: #f0f0f0; /* 改变页面的关键，后面要变成其他纸张 */
 }

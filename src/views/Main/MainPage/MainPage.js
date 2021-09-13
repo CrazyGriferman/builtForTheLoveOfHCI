@@ -9,11 +9,14 @@ import "./MainPage.css";
 
 export function MainPage() {
   const RouterHistory = useHistory();
-
+  window.addEventListener("scroll", () => {
+    console.log("scrolled");
+  });
   useEffect(() => {
     /* bug: 翻页效果必须一页一页来，现在点击后面的页面仍然能够翻 */
     /* 点击翻页效果 */
     let pages = document.getElementsByClassName("page");
+
     for (let i = 0; i < pages.length; i++) {
       let page = pages[i];
       if (i % 2 === 0) {
@@ -25,6 +28,17 @@ export function MainPage() {
       for (let i = 0; i < pages.length; i++) {
         let page = pages[i];
         page.pageNum = i + 1;
+        page.onwheel = function (event) {
+          if (this.pageNum % 2 === 0 && event.deltaY < 0) {
+            // scroll up - left flip
+            this.classList.remove("flipped");
+            this.previousElementSibling.classList.remove("flipped");
+          } else {
+            // scroll down - right flip
+            this.classList.add("flipped");
+            this.nextElementSibling.classList.add("flipped");
+          }
+        };
         page.onclick = function () {
           if (this.pageNum % 2 === 0) {
             this.classList.remove("flipped");
@@ -38,6 +52,7 @@ export function MainPage() {
     })();
     /* 点击翻页效果 */
   }, []);
+
   return (
     <>
       <div className="book">

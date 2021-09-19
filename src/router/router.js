@@ -39,7 +39,11 @@ const ROUTES = [
             path: "/main/designingwiththemindinmind/chaptertwosimilarityfivestar",
             key: "DESIGNINGWITHTHEMINDINMIND_CHAPTERTWO_SIMILARITY_FIVESTAR",
             exact: true,
-            component: () => <ChapterTwoSimilarityFiveStar />,
+            component: () => (
+              <DesigningWithTheMindInMindPage>
+                <ChapterTwoSimilarityFiveStar />
+              </DesigningWithTheMindInMindPage>
+            ),
           },
         ],
       },

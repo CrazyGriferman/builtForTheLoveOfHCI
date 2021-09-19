@@ -4,7 +4,7 @@ import pureBrownBackground from "../../../assets/pure-brown-background.jpg";
 import designingImg from "../../../assets/designing-with-the-mind-in-mind.jpeg";
 import "./DesigningWithTheMindInMindPage.css";
 
-function DesigningWithTheMindInMindPage() {
+function DesigningWithTheMindInMindPage(props) {
   const RouterHistory = useHistory();
   const location = useLocation();
 
@@ -37,17 +37,13 @@ function DesigningWithTheMindInMindPage() {
                   );
                 }}
               >
-                chaptertwosimilarityfivestar
+                test
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <p>432543534</p>
-        <h2>5423</h2>
-        <p>4234235</p>
-      </section>
+      {props.children}
     </>
   );
 }

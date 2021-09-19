@@ -71,8 +71,21 @@ export function MainPage() {
                 );
               }}
             >
-              543543你好54325436457654765 675436453654765475436534654
-              64537645765765475467546 7657564765756
+              <h1>Chapter 1</h1>
+              <h1>Chapter 2</h1>
+              <h1>Chapter 3</h1>
+              <h1>Chapter 4</h1>
+              <h1>Chapter 5</h1>
+              <h1>Chapter 6</h1>
+              <h1>Chapter 7</h1>
+              <h1>Chapter 8</h1>
+              <h1>Chapter 9</h1>
+              <h1>Chapter 10</h1>
+              <h1>Chapter 11</h1>
+              <h1>Chapter 12</h1>
+              <h1>Chapter 13</h1>
+              <h1>Chapter 14</h1>
+              <h1>Chapter 15</h1>
             </div>
           </div>
           <div className="page pageCover">

@@ -108,7 +108,7 @@ p {
 }
 
 .book .page:nth-child(odd):hover {
-  transform: rotateY(-15deg);
+  transform: rotateY(-2deg);
 } /* 让书有浮起来的感觉 */
 
 /* 页面漂浮起来的时候改变阴影 */
@@ -162,7 +162,7 @@ p {
 }
 
 .book .page.flipped:nth-child(even):hover {
-  transform: rotateY(15deg);
+  transform: rotateY(2deg);
 }
 
 .book .page.flipped:nth-child(even):hover:before {

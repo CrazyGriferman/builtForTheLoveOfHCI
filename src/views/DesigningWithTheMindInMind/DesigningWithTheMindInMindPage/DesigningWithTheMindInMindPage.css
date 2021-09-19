@@ -34,12 +34,20 @@ p {
   color: #000000;
 }
 
-.book {
+.designingbook {
   transition: opacity 0.4s 0.2s;
 }
 
-.book {
+.designingbook {
+  transition-property: perspective;
+  perspective: 5000vw;
+  transition: 10000ms ease-in-out;
+  pointer-events: none;
+}
+
+.designingbook.designingbook-is-active {
   perspective: 90vw;
+  pointer-events: all;
 }
 
 /* .page {
@@ -52,7 +60,7 @@ p {
   background-size: cover;
 }
  */
-.book .pages {
+.designingbook .designingpages {
   width: 80vw;
   height: 55vw;
   position: relative;
@@ -63,7 +71,7 @@ p {
   border-radius: 16px;
 }
 
-.book .page {
+.designingbook .designingpage {
   /* box-shadow: 1px 1px 10px blue; */
   float: none;
   clear: none;
@@ -82,7 +90,7 @@ p {
   background-color: #f0f0f0; /* 改变页面的关键，后面要变成其他纸张 */
 }
 
-.book .page::before {
+.designingbook .designingpage::before {
   content: "";
   position: absolute;
   /* 这里加了会让原来的html元素的大小变为最小，导致鼠标点击事件失灵 */
@@ -95,7 +103,7 @@ p {
   z-index: 2;
 }
 /* odd 表示只对偶数页生效 */
-.book .page:nth-child(odd) {
+.designingbook .designingpage:nth-child(odd) {
   pointer-events: all;
   transform: rotateY(0deg);
   right: 0;
@@ -107,34 +115,34 @@ p {
   );
 }
 
-.book .page:nth-child(odd):hover {
-  transform: rotateY(-15deg);
+.designingbook .designingpage:nth-child(odd):hover {
+  transform: rotateY(-2deg);
 } /* 让书有浮起来的感觉 */
 
 /* 页面漂浮起来的时候改变阴影 */
-.book .page:nth-child(odd):hover:before {
+.designingbook .designingpage:nth-child(odd):hover:before {
   background: rgba(0, 0, 0, 0.03);
 }
 
-.book .page:nth-child(odd):before {
+.designingbook .designingpage:nth-child(odd):before {
   background: rgba(0, 0, 0, 0);
 }
 
-.page:nth-child(odd) {
+.designingpage:nth-child(odd) {
   background-position: right top;
 }
 
-.book .page.flipped:nth-child(odd) {
+.designingbook .designingpage.flipped:nth-child(odd) {
   pointer-events: none;
   transform: rotateY(-180deg);
 }
 
-.book .page.flipped:nth-child(odd):before {
+.designingbook .designingpage.flipped:nth-child(odd):before {
   background: rgba(0, 0, 0, 0.2);
 }
 
 /* 奇数页面变化 */
-.book .page:nth-child(even) {
+.designingbook .designingpage:nth-child(even) {
   pointer-events: none;
   transform: rotateY(180deg);
   transform-origin: 100% 0;
@@ -148,38 +156,38 @@ p {
   );
 }
 
-.book .page:nth-child(even):before {
+.designingbook .designingpage:nth-child(even):before {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.book .page.grabbing {
+.designingbook .designingpage.grabbing {
   transition: none;
 }
 
-.book .page.flipped:nth-child(even) {
+.designingbook .designingpage.flipped:nth-child(even) {
   pointer-events: all;
   transform: rotateY(0deg);
 }
 
-.book .page.flipped:nth-child(even):hover {
-  transform: rotateY(15deg);
+.designingbook .designingpage.flipped:nth-child(even):hover {
+  transform: rotateY(2deg);
 }
 
-.book .page.flipped:nth-child(even):hover:before {
+.designingbook .designingpage.flipped:nth-child(even):hover:before {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.book .page.flipped:nth-child(even):before {
+.designingbook .designingpage.flipped:nth-child(even):before {
   background: rgba(0, 0, 0, 0);
 }
 
-.page:neth-child(even) {
+.designingpage:neth-child(even) {
   clear: both;
 }
 
 /* pageCover */
 
-.page .pageCover {
+.designingpage .designingpageCover {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -188,7 +196,7 @@ p {
 
 /* pageCover */
 
-.page .chapter {
+.designingpage .designingchapter {
   z-index: 10;
   cursor: pointer;
 }

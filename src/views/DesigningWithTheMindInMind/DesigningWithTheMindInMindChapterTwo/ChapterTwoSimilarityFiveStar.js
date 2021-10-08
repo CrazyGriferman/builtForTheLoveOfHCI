@@ -9,9 +9,14 @@ function ChapterTwoSimilarityFiveStar() {
         <label for="star5" title="text">
           5 stars
         </label>
-        <input type="radio" id="star4" name="rate" value="4" />
+        <input
+          type="radio"
+          id="star4"
+          name="rat                                                                                                                                                                                                                                  e"
+          value="4"
+        />
         <label for="star4" title="text">
-          4 stars
+          4 stars e d
         </label>
         <input type="radio" id="star3" name="rate" value="3" />
         <label for="star3" title="text">

@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeroPage.css";
+import "./HeroPage.scss";
 import oldBookWithLight from "../../../assets/old-book-with-light.jpg";
 import { useHistory } from "react-router";
 

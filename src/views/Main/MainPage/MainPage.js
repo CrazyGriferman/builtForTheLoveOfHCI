@@ -5,7 +5,7 @@ import dontMakeMeThinkImg from "../../../assets/dont-make-me-think.jpeg";
 import designingInterfacesImg from "../../../assets/designing-interfaces.jpeg";
 import webFormDesignImg from "../../../assets/web-form-design.jpeg";
 import { useHistory } from "react-router";
-import "./MainPage.css";
+import "./MainPage.scss";
 
 export function MainPage() {
   const RouterHistory = useHistory();

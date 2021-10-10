@@ -1,0 +1,163 @@
+.book {
+  transition: opacity 0.4s 0.2s;
+  perspective: 90vw;
+
+  /* 原先* 的 */
+  touch-action: none; /*   这条很关键，用来防止所有的默认行为 */
+  box-sizing: border-box;
+
+  /* 原先html,body的 */
+  font-family: "Courier New", Courier, monospace;
+  /* height: 100vh; */
+
+  /* 原先body的 */
+  display: float;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  padding: 0 0;
+
+  p {
+    margin-top: 8vw;
+    text-align: center;
+    font-size: 5vw;
+    color: #000000;
+  }
+
+  .pages {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+    transform: rotateX(20deg);
+    backface-visibility: hidden;
+    border-radius: 16px;
+  }
+
+  .page {
+    float: none;
+    clear: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 90vh;
+    transform-origin: 0 0;
+    transition: transform 1.4s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    /* user-select: none; */
+    background-color: #f0f0f0; /* 改变页面的关键，后面要变成其他纸张 */
+
+    .pageCover {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      position: relative;
+    }
+
+    .chapter {
+      z-index: 10;
+      cursor: pointer;
+    }
+    &.grabbing {
+      transition: none;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      /* 这里加了会让原来的html元素的大小变为最小，导致鼠标点击事件失灵 */
+      /* top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; */
+      /* background: rgba(0, 0, 0, 0); */
+      transition: background 0.7s;
+      z-index: 2;
+    }
+
+    // 奇数页面变化
+    &:nth-child(even) {
+      pointer-events: none;
+      transform: rotateY(180deg);
+      transform-origin: 100% 0;
+      left: 0;
+      border-radius: 8px 0 0 8px;
+      border-color: black;
+      background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.12) 0%,
+        rgba(0, 0, 0, 0) 10%
+      );
+
+      &.flipped {
+        pointer-events: all;
+        transform: rotateY(0deg);
+
+        &:before {
+          background: rgba(0, 0, 0, 0);
+        }
+
+        &:hover {
+          transform: rotateY(2deg);
+          &:before {
+            background: rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+      /*
+      .book .page:nth-child(even):before {
+        background: rgba(0, 0, 0, 0.2);
+      }
+      */
+      &:before {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    /* odd 表示只对偶数页生效 */
+    &:nth-child(odd) {
+      background-position: right top;
+      pointer-events: all;
+      transform: rotateY(0deg);
+      right: 0;
+      border-radius: 0 8px 8px 0;
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(0, 0, 0, 0) 10%
+      );
+
+      /* 让书有浮起来的感觉 */
+      &:hover {
+        transform: rotateY(-20deg);
+
+        /* 页面漂浮起来的时候改变阴影 */
+        &:before {
+          background: rgba(0, 0, 0, 0.03);
+        }
+      }
+
+      &.flipped {
+        pointer-events: none;
+        transform: rotateY(-180deg);
+        &:before {
+          background: rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      &:before {
+        background: rgba(0, 0, 0, 0);
+      }
+
+      &:hover:before {
+        background: rgba(255, 255, 255, 0.03);
+      }
+    }
+
+    &:nth-child(even) {
+      clear: both;
+    }
+  }
+}

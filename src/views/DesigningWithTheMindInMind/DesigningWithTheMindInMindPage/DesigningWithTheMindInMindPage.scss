@@ -1,6 +1,37 @@
-.book {
-  transition: opacity 0.4s 0.2s;
-  perspective: 90vw;
+.designingbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 55vw;
+  object-fit: cover;
+  object-position: 83%;
+  z-index: -1;
+}
+
+.designingbook {
+  perspective: 1000vw;
+  transition: transform 5000ms ease-in-out;
+  transition-property: perspective;
+
+  &.designingbook-is-active {
+    perspective: 90vw;
+    pointer-events: all;
+  }
+
+  /* transform: perspective(6vw);
+  -webkit-transform: perspective(6vw);
+  -webkit-animation: changePerspective 1s infinite;
+
+  @-webkit-keyframes changePerspective {
+    to {
+      -webkit-transform: perspective(10vw);
+    }
+  } */
+
+  pointer-events: none;
+
+  /* transition: opacity 0.4s 0.2s; */
 
   /* 原先* 的 */
   touch-action: none; /*   这条很关键，用来防止所有的默认行为 */
@@ -8,7 +39,6 @@
 
   /* 原先html,body的 */
   font-family: "Courier New", Courier, monospace;
-  /* height: 100vh; */
 
   /* 原先body的 */
   display: flex;
@@ -23,7 +53,7 @@
     color: #000000;
   }
 
-  .pages {
+  .designingpages {
     width: 100vw;
     height: 90vh;
     position: relative;
@@ -34,7 +64,7 @@
     border-radius: 16px;
   }
 
-  .page {
+  .designingpage {
     float: none;
     clear: none;
     margin: 0;
@@ -50,14 +80,14 @@
     /* user-select: none; */
     background-color: #f0f0f0; /* 改变页面的关键，后面要变成其他纸张 */
 
-    .pageCover {
+    .designingpageCover {
       width: 100%;
       height: 100%;
       object-fit: fill;
       position: relative;
     }
 
-    .chapter {
+    .designingchapter {
       z-index: 10;
       cursor: pointer;
     }

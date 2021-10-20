@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory, useLocation } from "react-router";
-import pureBrownBackground from "../../../assets/pure-brown-background.jpg";
-import designingImg from "../../../assets/designing-with-the-mind-in-mind.jpeg";
+import { designingImg } from "../../../assets/";
+import { pureBrownBackground } from "../../../assets";
 import "./DesigningWithTheMindInMindPage.scss";
 
 function DesigningWithTheMindInMindPage(props) {

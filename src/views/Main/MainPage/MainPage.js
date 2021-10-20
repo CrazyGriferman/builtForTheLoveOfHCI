@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import oldBookPage from "../../../assets/old-book-page.jpeg";
-import designingImg from "../../../assets/designing-with-the-mind-in-mind.jpeg";
-import dontMakeMeThinkImg from "../../../assets/dont-make-me-think.jpeg";
-import designingInterfacesImg from "../../../assets/designing-interfaces.jpeg";
-import webFormDesignImg from "../../../assets/web-form-design.jpeg";
+import {
+  designingImg,
+  designingInterfacesImg,
+  dontMakeMeThinkImg,
+  webFormDesignImg,
+} from "../../../assets/index.js";
 import { useHistory } from "react-router";
 import "./MainPage.scss";
 

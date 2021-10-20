@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroPage.scss";
-import oldBookWithLight from "../../../assets/old-book-with-light.jpg";
+import { oldBookWithLight } from "../../../assets/index.js";
 import { useHistory } from "react-router";
 
 export function HeroPage() {

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { FMSCLinkGrid } from "../../../components/DesigningWithTheMindInMindComponents/FMSC/FMSCLinkGrid";
 import "./DesigningWithTheMindInMindChapterTwelve.scss";
-//import FMSCLogo from "../../../assets/designing/fmsc-web-logo.png";
 import { FMSCLogo } from "../../../assets/index.js";
-import "./DesigningWithTheMindInMindChapterTwelve.scss";
 export function DesigningWithTheMindInMindChapterTwelve() {
   const testContent = {
     className: "test",
@@ -41,7 +39,6 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       },
     ],
   });
-  console.log(NavItem);
 
   return (
     <section className="designingTwelveFMSCWrap">

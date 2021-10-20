@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FMSCLinkGrid } from "../../../components/DesigningWithTheMindInMindComponents/FMSC/FMSCLinkGrid";
 import "./DesigningWithTheMindInMindChapterTwelve.scss";
-import FMSCLogo from "../../../assets/designing/fmsc-web-logo.png";
+//import FMSCLogo from "../../../assets/designing/fmsc-web-logo.png";
+import { FMSCLogo } from "../../../assets/index.js";
 import "./DesigningWithTheMindInMindChapterTwelve.scss";
 export function DesigningWithTheMindInMindChapterTwelve() {
   const testContent = {
@@ -93,7 +94,9 @@ export function DesigningWithTheMindInMindChapterTwelve() {
             <li></li>
             <li></li>
           </ol>
-          <div className="designingTwelveFMSCWrap-carousel_item1"></div>
+          <div className="designingTwelveFMSCWrap-carousel_item1">
+            <img src="" alt="" />
+          </div>
           <div className="designingTwelveFMSCWrap-carousel_item2"></div>
           <div className="designingTwelveFMSCWrap-carousel_item3"></div>
           <div className="designingTwelveFMSCWrap-carousel_item4"></div>

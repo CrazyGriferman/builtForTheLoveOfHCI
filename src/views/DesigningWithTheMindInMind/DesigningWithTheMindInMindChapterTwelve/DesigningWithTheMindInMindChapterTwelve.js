@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import { FMSCLinkGrid } from "../../../components/DesigningWithTheMindInMindComponents/FMSC/FMSCLinkGrid";
 import "./DesigningWithTheMindInMindChapterTwelve.scss";
-import { FMSCLogo } from "../../../assets/index.js";
+import {
+  FMSCLogo,
+  carouselImg1,
+  carouselImg2,
+  carouselImg3,
+  carouselImg4,
+  carouselImg5,
+} from "../../../assets/index.js";
 export function DesigningWithTheMindInMindChapterTwelve() {
   const testContent = {
     className: "test",
@@ -80,19 +87,21 @@ export function DesigningWithTheMindInMindChapterTwelve() {
         <div className="designingTwelveFMSCWrap-navbar__search">
           <ul>
             <a href="">
-              <i className="fa fa-user"></i>
-              dropdown
+              <i className="fa fa-search"></i>
             </a>
             <li>
-              <ul>
+              {/* <ul>
                 <li>432</li>
                 <li>432</li>
-              </ul>
+              </ul> */}
             </li>
           </ul>
         </div>
         <div className="designingTwelveFMSCWrap-navbar__login">
-          <a href="">dropdown2</a>
+          <a href="">
+            <i className="fa fa-lock"></i>
+            <span> Log in</span>
+          </a>
         </div>
       </nav>
       <main>

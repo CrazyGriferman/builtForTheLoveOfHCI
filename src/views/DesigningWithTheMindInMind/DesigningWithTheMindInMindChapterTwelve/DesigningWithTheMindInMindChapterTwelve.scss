@@ -17,7 +17,7 @@ img {
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: #eee;
+    background: #4779a3;
 
     &__nav {
       font-size: 14px;
@@ -57,10 +57,10 @@ img {
       }
     }
     &__search {
-      background-color: black;
-      i {
-        color: #fff;
-      }
+      margin: 0 1em 0 1em;
+    }
+    &__login {
+      margin: 0 1em 0 0;
     }
   }
 }

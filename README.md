@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Problems
+
+## import font-awesome in react
+
+1.cnpm install --save @fortawesome/fontawesome-free
+
+2. then add `import "../node_modules/font-awesome/css/font-awesome.min.css";` in ./src/index.js
+
+3. finally you can add icon like `<i className="fa fa-user" />` in components without importing modules again.
+
+## <img src={object Module} />
+
+When you want to use `import {}` to import images, you will probably meet the problems.
+
+fix: you can add codes as follows in `webpack.config.js` to fix the question
+
+```
+loader: require.resolve("url-loader"),
+  options: {
+    name: "static/media/[name].[hash:8].[ext]",
+    esModule: false,
+},
+```
+
+more details: https://www.goldaner.com/details?id=39

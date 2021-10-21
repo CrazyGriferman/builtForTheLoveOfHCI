@@ -15,6 +15,7 @@ img {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    padding: 1em 0 1em 0;
     justify-content: center;
     align-items: center;
     background: #4779a3;
@@ -44,9 +45,9 @@ img {
       button {
         top: 3.5%;
         display: inline;
-        color: #ddd;
+        color: #246192;
         cursor: pointer;
-        background-color: transparent;
+        background-color: #fff;
         margin: 0;
         padding: 6px 12px;
         border: 1px solid #487bff;
@@ -54,13 +55,52 @@ img {
         border-radius: 5px;
         font-size: 18px;
         margin: 0.2em;
+
+        &:hover {
+          background-color: #02c1d5;
+        }
       }
     }
     &__search {
+      background-color: #124975;
+
       margin: 0 1em 0 1em;
+      a {
+        padding: 0 6px 0 6px;
+        color: #fff;
+      }
     }
     &__login {
+      background-color: #124975;
+      color: #fff;
       margin: 0 1em 0 0;
+      a {
+        padding: 0px 8px 0px 8px;
+        color: #fff;
+      }
+    }
+  }
+  &-carousel {
+    img {
+      z-index: -1;
+      object-fit: cover;
+      width: 100%;
+    }
+    &_item {
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      object-fit: contain; */
+      position: relative;
+      display: inline-block;
+      &__caption {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }

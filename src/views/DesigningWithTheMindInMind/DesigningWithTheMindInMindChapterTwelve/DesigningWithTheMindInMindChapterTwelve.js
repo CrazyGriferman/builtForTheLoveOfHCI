@@ -113,17 +113,25 @@ export function DesigningWithTheMindInMindChapterTwelve() {
             <li></li>
             <li></li>
           </ol>
-          <div className="designingTwelveFMSCWrap-carousel_item1">
-            <img src="" alt="" />
+          <div className="designingTwelveFMSCWrap-carousel_item">
+            <div className="designingTwelveFMSCWrap-carousel_item__caption">
+              <h4>
+                <a href="">Test</a>
+                <br />
+                <br />
+                <span>test</span>
+              </h4>
+            </div>
+            <img src={carouselImg1} alt="" />
           </div>
-          <div className="designingTwelveFMSCWrap-carousel_item2"></div>
-          <div className="designingTwelveFMSCWrap-carousel_item3"></div>
-          <div className="designingTwelveFMSCWrap-carousel_item4"></div>
+          <div className="designingTwelveFMSCWrap-carousel_item"></div>
+          <div className="designingTwelveFMSCWrap-carousel_item"></div>
+          <div className="designingTwelveFMSCWrap-carousel_item"></div>
           <a href="">
             <i></i>
           </a>
           <a href="">
-            <i>右边箭头</i>
+            <i></i>
           </a>
         </div>
         <div className="designingTwelveFMSCWrap-main-buttonList">

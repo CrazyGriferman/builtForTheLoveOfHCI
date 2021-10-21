@@ -26,13 +26,25 @@ export function DesigningWithTheMindInMindChapterTwelve() {
         },
       },
       {
-        NavBarName: "订单",
+        NavBarName: "Ways to Give",
         ToggleLink: () => {
           console.log("订单");
         },
       },
       {
-        NavBarName: "个人资料",
+        NavBarName: "Impact of Our Work",
+        ToggleLink: () => {
+          console.log("个人资料");
+        },
+      },
+      {
+        NavBarName: "About Us",
+        ToggleLink: () => {
+          console.log("个人资料");
+        },
+      },
+      {
+        NavBarName: "MarketPlace",
         ToggleLink: () => {
           console.log("个人资料");
         },
@@ -42,46 +54,47 @@ export function DesigningWithTheMindInMindChapterTwelve() {
 
   return (
     <section className="designingTwelveFMSCWrap">
-      <header>
-        <div className="designingTwelveFMSCWrap-navbar">
-          <img
-            className="designingTwelveFMSCWrap-navbar__logo"
-            src={FMSCLogo}
-            alt=""
-          />
-          <div className="designingTwelveFMSCWrap-navbar__nav">
-            <ul>
-              {NavItem.content.map((Nav) => {
-                return (
-                  <li key={Nav.NavBarName}>
-                    <a href="#" onClick={Nav.ToggleLink}>
-                      {Nav.NavBarName}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <div className="designingTwelveFMSCWrap-navbar-buttonContainer">
-            <button>32423</button>
-            <button>543543</button>
-          </div>
-          <div className="designingTwelveFMSCWrap-navbar__search">
-            <ul>
-              <a href="">dropdown1</a>
-              <li>
-                <ul>
-                  <li>432</li>
-                  <li>432</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div className="designingTwelveFMSCWrap-navbar__login">
-            <a href="">dropdown2</a>
-          </div>
+      <nav className="designingTwelveFMSCWrap-navbar">
+        <img
+          className="designingTwelveFMSCWrap-navbar__logo"
+          src={FMSCLogo}
+          alt=""
+        />
+        <div className="designingTwelveFMSCWrap-navbar__nav">
+          <ul>
+            {NavItem.content.map((Nav) => {
+              return (
+                <li key={Nav.NavBarName}>
+                  <a href="#" onClick={Nav.ToggleLink}>
+                    {Nav.NavBarName}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-      </header>
+        <div className="designingTwelveFMSCWrap-navbar-buttonContainer">
+          <button>32423</button>
+          <button>543543</button>
+        </div>
+        <div className="designingTwelveFMSCWrap-navbar__search">
+          <ul>
+            <a href="">
+              <i className="fa fa-user"></i>
+              dropdown
+            </a>
+            <li>
+              <ul>
+                <li>432</li>
+                <li>432</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div className="designingTwelveFMSCWrap-navbar__login">
+          <a href="">dropdown2</a>
+        </div>
+      </nav>
       <main>
         <div className="designingTwelveFMSCWrap-carousel">
           <ol className="designingTwelveFMSCWrap-carousel_indicators">
@@ -98,7 +111,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
           <div className="designingTwelveFMSCWrap-carousel_item3"></div>
           <div className="designingTwelveFMSCWrap-carousel_item4"></div>
           <a href="">
-            <i>左边箭头</i>
+            <i></i>
           </a>
           <a href="">
             <i>右边箭头</i>

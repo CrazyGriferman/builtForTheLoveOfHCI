@@ -1,11 +1,3 @@
-.linkGrid {
-  &.test {
-    .test__a {
-      font-size: 100px;
-    }
-  }
-}
-
 .designingTwelveFMSCWrap {
   &-navbar {
     display: flex;
@@ -133,6 +125,57 @@
           }
         }
       }
+    }
+  }
+  &-buttonList {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 5px;
+      list-style: none;
+      text-align: left;
+      width: 100vw;
+      padding: 1em 7em 1em 7em;
+    }
+
+    li {
+      background-color: #246192;
+      width: 22vw;
+      display: flex;
+      padding: 0.8em;
+      margin: 0 1em 0 1em;
+      a {
+        color: #fff;
+        width: 100%;
+      }
+      &:hover {
+        background-color: #02c1d5;
+      }
+    }
+  }
+
+  &-fluid {
+    padding: 2em;
+    position: relative;
+    background-color: #dde5ed;
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      color: #246192;
+    }
+    &:after {
+      width: 0;
+      height: 0;
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -29px;
+      border-left: 48px solid transparent;
+      border-right: 48px solid transparent;
+      border-top: 29px solid #dde5ed;
+      margin-left: -48px;
+      z-index: 100;
     }
   }
 }

@@ -10,19 +10,20 @@ import {
   carouselImg5,
 } from "../../../assets/index.js";
 export function DesigningWithTheMindInMindChapterTwelve() {
-  const testContent = {
-    className: "test",
-    content: [
-      {
-        url: "http://www.baidu.com",
-        text: "百度",
-      },
-      {
-        url: "http://www.google.com",
-        text: "谷歌",
-      },
-    ],
-  };
+  const testContent = [
+    {
+      url: "http://www.baidu.com",
+      text: "Food Aid Request",
+    },
+    {
+      url: "http://www.google.com",
+      text: "Haiti Earthquake",
+    },
+    {
+      url: "http://www.google.com",
+      text: "Blog",
+    },
+  ];
 
   const [NavItem] = useState({
     content: [
@@ -145,10 +146,10 @@ export function DesigningWithTheMindInMindChapterTwelve() {
             <i></i>
           </a>
         </div>
-        <div className="designingTwelveFMSCWrap-main-buttonList">
+        <div className="designingTwelveFMSCWrap-buttonList">
           <FMSCLinkGrid props={testContent} />
         </div>
-        <div className="designingTwelveFMSCWrap-main-title1">
+        <div className="designingTwelveFMSCWrap-fluid">
           <h1>How it works</h1>
         </div>
       </main>

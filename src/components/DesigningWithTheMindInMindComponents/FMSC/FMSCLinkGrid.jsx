@@ -6,20 +6,22 @@ export function FMSCLinkGrid(props) {
 
   return (
     props.props && (
-      <div className={[`linkGrid`, `${props.props.className}`].join(" ")}>
-        {props.props.content.map((item) => (
-          <div>
-            <a
+      <ul>
+        {props.props.map((item) => (
+          <li>
+            <a href={item.url}>{item.text}</a>
+          </li>
+        ))}
+      </ul>
+    )
+  );
+}
+
+/* 
+<a
               className={[`linkGrid__a`, `${props.props.className}__a`].join(
                 " "
               )}
               href={item.url}
             >
-              {item.text}
-            </a>
-          </div>
-        ))}
-      </div>
-    )
-  );
-}
+             */

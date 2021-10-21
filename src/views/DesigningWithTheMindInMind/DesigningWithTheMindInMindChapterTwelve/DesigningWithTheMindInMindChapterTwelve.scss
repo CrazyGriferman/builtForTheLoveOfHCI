@@ -6,21 +6,20 @@
   }
 }
 
-img {
-  background-color: blue;
-}
-
 .designingTwelveFMSCWrap {
   &-navbar {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    padding: 1em 0 1em 0;
+    padding: 0.45em 0 0.45em 0;
     justify-content: center;
     align-items: center;
     background: #4779a3;
 
     &__nav {
+      img {
+        background-color: #4779a3;
+      }
       font-size: 14px;
 
       ul {
@@ -38,6 +37,9 @@ img {
         justify-content: center;
         align-items: center;
         padding: 0.5em;
+        a {
+          color: #fff;
+        }
       }
     }
 
@@ -63,7 +65,6 @@ img {
     }
     &__search {
       background-color: #124975;
-
       margin: 0 1em 0 1em;
       a {
         padding: 0 6px 0 6px;
@@ -81,25 +82,56 @@ img {
     }
   }
   &-carousel {
-    img {
-      z-index: -1;
-      object-fit: cover;
-      width: 100%;
-    }
     &_item {
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      object-fit: contain; */
       position: relative;
+      overflow: hidden;
       display: inline-block;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      img {
+        z-index: -1;
+        object-fit: cover;
+        width: 100vw;
+        background: transparent;
+      }
+
       &__caption {
+        top: 12%;
+        left: 8%;
         position: absolute;
-        height: 100%;
-        width: 100%;
-        text-align: center;
+        padding: 3em 3em 3em 3em;
+        h4 {
+          display: block;
+          position: relative;
+          text-align: left;
+          width: 31vw;
+          line-height: 2em;
+          span {
+            font-size: 1.3em;
+            font-weight: 400;
+          }
+          a {
+            font-size: 2em;
+            font-weight: 500;
+          }
+          * {
+            color: #fff;
+          }
+          button {
+            padding: 0.2em;
+            background-color: transparent;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #fff;
+            span {
+              font-size: 2em;
+            }
+            &:hover {
+              background-color: #02c1d5;
+            }
+          }
+        }
       }
     }
   }

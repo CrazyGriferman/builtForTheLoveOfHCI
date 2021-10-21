@@ -116,10 +116,21 @@ export function DesigningWithTheMindInMindChapterTwelve() {
           <div className="designingTwelveFMSCWrap-carousel_item">
             <div className="designingTwelveFMSCWrap-carousel_item__caption">
               <h4>
-                <a href="">Test</a>
+                <a href="">Christmas Around the World</a>
                 <br />
                 <br />
-                <span>test</span>
+                <span>
+                  Experience the sights, sounds and traditions of the Christmas
+                  season in FMSC partner communities.
+                  <br />
+                  <br />
+                  Join us for free.
+                </span>
+                <br />
+                <br />
+                <button>
+                  <span>Give now &gt;</span>
+                </button>
               </h4>
             </div>
             <img src={carouselImg1} alt="" />

@@ -33,18 +33,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         a {
           padding: 1.5em 0 1.5em 0;
-          height: 100%;
+
           color: #fff;
-          &:hover {
-            color: #4779a3;
-          }
         }
         &:hover {
           cursor: pointer;
           background-color: #fff;
+          a {
+            color: #4779a3;
+          }
         }
       }
     }
@@ -63,7 +62,6 @@
         border-radius: 5px;
         font-size: 18px;
         margin: 0.2em;
-
         &:hover {
           background-color: #02c1d5;
         }
@@ -75,9 +73,9 @@
       a {
         padding: 0 6px 0 6px;
         color: #fff;
-      }
-      &:hover {
-        background-color: #246192;
+        &:hover {
+          background-color: #246192;
+        }
       }
     }
     &__login {
@@ -85,11 +83,11 @@
       color: #fff;
       margin: 0 1em 0 0;
       a {
-        padding: 0px 8px 0px 8px;
+        padding: 0px 1em 0px 1em;
         color: #fff;
-      }
-      &:hover {
-        background-color: #246192;
+        &:hover {
+          background-color: #246192;
+        }
       }
     }
   }
@@ -166,7 +164,6 @@
       margin: 0 1em 0 1em;
       a {
         color: #fff;
-        width: 100%;
       }
       &:hover {
         background-color: #02c1d5;

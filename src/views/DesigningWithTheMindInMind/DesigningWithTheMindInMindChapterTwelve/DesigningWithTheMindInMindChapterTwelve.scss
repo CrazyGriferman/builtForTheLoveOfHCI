@@ -1,7 +1,6 @@
 .designingTwelveFMSCWrap {
   &-navbar {
     display: flex;
-    flex-flow: row wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -9,40 +8,38 @@
 
     &__logo {
       img {
-        width: 90%;
-        height: 90%;
         background-color: #4779a3;
         padding: 0.2em 0 0.2em 1em;
       }
     }
-
     &__nav {
       font-size: 14px;
-
+      z-index: 100;
       ul {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        grid-gap: 5px;
         list-style: none;
-        text-align: center;
         width: 50vw;
-        margin-right: 2rem;
-      }
-
-      li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-          padding: 1.5em 0 1.5em 0;
-
-          color: #fff;
-        }
-        &:hover {
-          cursor: pointer;
-          background-color: #fff;
+        margin-right: 5rem;
+        li {
           a {
-            color: #4779a3;
+            padding: 2em 1em 2em 1em;
+            color: #fff;
+          }
+          &:hover {
+            background-color: #fff;
+            a {
+              color: #4779a3;
+              background-color: #fff;
+            }
+          }
+          ul {
+            li {
+              a {
+                padding: 0.5em;
+                &:hover {
+                  background-color: #dde5ed;
+                }
+              }
+            }
           }
         }
       }

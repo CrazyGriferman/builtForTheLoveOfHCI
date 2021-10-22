@@ -12,16 +12,13 @@ import {
 export function DesigningWithTheMindInMindChapterTwelve() {
   const testContent = [
     {
-      url: "http://www.baidu.com",
-      text: "Food Aid Request",
+      category: "Food Aid Request",
     },
     {
-      url: "http://www.google.com",
-      text: "Haiti Earthquake",
+      category: "Haiti Earthquake",
     },
     {
-      url: "http://www.google.com",
-      text: "Blog",
+      category: "Blog",
     },
   ];
 
@@ -60,6 +57,74 @@ export function DesigningWithTheMindInMindChapterTwelve() {
     ],
   });
 
+  const testContent2 = [
+    {
+      category: "Get Involved",
+      dropdown: [
+        {
+          text: "test1",
+          url: "http://www.baidu.com",
+        },
+        {
+          text: "test2",
+          url: "http://www.baidu.com",
+        },
+      ],
+    },
+    {
+      category: "Ways to Give",
+      dropdown: [
+        {
+          text: "test1",
+          url: "http://www.google.com",
+        },
+        {
+          text: "test2",
+          url: "http://www.google.com",
+        },
+      ],
+    },
+    {
+      category: "Impact of Our Work",
+      dropdown: [
+        {
+          text: "test2",
+          url: "http://www.google.com",
+        },
+        {
+          text: "test3",
+          url: "http://www.google.com",
+        },
+      ],
+    },
+    {
+      category: "About Us",
+      dropdown: [
+        {
+          text: "test2",
+          url: "http://www.google.com",
+        },
+        {
+          text: "test3",
+          url: "http://www.google.com",
+        },
+      ],
+    },
+    {
+      category: "MarketPlace",
+      dropdown: [
+        {
+          text: "test2",
+          url: "http://www.google.com",
+        },
+        {
+          text: "test3",
+          url: "http://www.google.com",
+        },
+      ],
+    },
+  ];
+
   return (
     <section className="designingTwelveFMSCWrap">
       <nav className="designingTwelveFMSCWrap-navbar">
@@ -67,8 +132,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
           <img src={FMSCLogo} alt="" />
         </a>
         <div className="designingTwelveFMSCWrap-navbar__nav">
-          <ul>
-            {NavItem.content.map((Nav) => {
+          {/* {NavItem.content.map((Nav) => {
               return (
                 <li key={Nav.NavBarName}>
                   <a href="#" onClick={Nav.ToggleLink}>
@@ -76,8 +140,8 @@ export function DesigningWithTheMindInMindChapterTwelve() {
                   </a>
                 </li>
               );
-            })}
-          </ul>
+            })} */}
+          <FMSCLinkGrid props={testContent2} />
         </div>
         <div className="designingTwelveFMSCWrap-navbar-buttonContainer">
           <button>32423</button>
@@ -89,10 +153,10 @@ export function DesigningWithTheMindInMindChapterTwelve() {
               <i className="fa fa-search"></i>
             </a>
             <li>
-              {/* <ul>
+              <ul>
                 <li>432</li>
                 <li>432</li>
-              </ul> */}
+              </ul>
             </li>
           </ul>
         </div>

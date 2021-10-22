@@ -1,15 +1,26 @@
 import React from "react";
-import { useState } from "react";
+import "./FMSCLinkGrid.scss";
 
 export function FMSCLinkGrid(props) {
-  console.log(props.props);
-
   return (
     props.props && (
-      <ul>
+      <ul className="dropdown">
         {props.props.map((item) => (
           <li>
-            <a href={item.url}>{item.text}</a>
+            <a href="#" className="dropdown-select">
+              {item.category}
+            </a>
+            {item.dropdown && (
+              <ul className="dropdown-list">
+                {item.dropdown.map((list) => (
+                  <li>
+                    <a className="dropdown-list__link" href={list.url}>
+                      {list.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>

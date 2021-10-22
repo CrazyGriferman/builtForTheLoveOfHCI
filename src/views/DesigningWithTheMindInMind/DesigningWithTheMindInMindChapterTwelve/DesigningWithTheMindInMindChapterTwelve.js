@@ -63,11 +63,9 @@ export function DesigningWithTheMindInMindChapterTwelve() {
   return (
     <section className="designingTwelveFMSCWrap">
       <nav className="designingTwelveFMSCWrap-navbar">
-        <img
-          className="designingTwelveFMSCWrap-navbar__logo"
-          src={FMSCLogo}
-          alt=""
-        />
+        <a href="#" className="designingTwelveFMSCWrap-navbar__logo">
+          <img src={FMSCLogo} alt="" />
+        </a>
         <div className="designingTwelveFMSCWrap-navbar__nav">
           <ul>
             {NavItem.content.map((Nav) => {

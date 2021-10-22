@@ -22,51 +22,36 @@ export function DesigningWithTheMindInMindChapterTwelve() {
     },
   ];
 
-  const [NavItem] = useState({
-    content: [
-      {
-        NavBarName: "Get Involved",
-        ToggleLink: () => {
-          console.log("市场");
-        },
-      },
-      {
-        NavBarName: "Ways to Give",
-        ToggleLink: () => {
-          console.log("订单");
-        },
-      },
-      {
-        NavBarName: "Impact of Our Work",
-        ToggleLink: () => {
-          console.log("个人资料");
-        },
-      },
-      {
-        NavBarName: "About Us",
-        ToggleLink: () => {
-          console.log("个人资料");
-        },
-      },
-      {
-        NavBarName: "MarketPlace",
-        ToggleLink: () => {
-          console.log("个人资料");
-        },
-      },
-    ],
-  });
-
   const testContent2 = [
     {
       category: "Get Involved",
       dropdown: [
         {
-          text: "test1",
+          text: "Overview",
           url: "http://www.baidu.com",
         },
         {
-          text: "test2",
+          text: "Volunteer",
+          url: "http://www.baidu.com",
+        },
+        {
+          text: "Volunteer Info",
+          url: "http://www.baidu.com",
+        },
+        {
+          text: "Host a MobilePack event",
+          url: "http://www.baidu.com",
+        },
+        {
+          text: "Become a speaker",
+          url: "http://www.baidu.com",
+        },
+        {
+          text: "Virtual experiences",
+          url: "http://www.baidu.com",
+        },
+        {
+          text: "Food in Action trips",
           url: "http://www.baidu.com",
         },
       ],
@@ -75,11 +60,35 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       category: "Ways to Give",
       dropdown: [
         {
-          text: "test1",
+          text: "Overview",
           url: "http://www.google.com",
         },
         {
-          text: "test2",
+          text: "Fundraise for FMSC",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Make a monthly donation",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Planned giving",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Matching gifts",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Give to grow",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Donate to a MobilePack",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Other ways to give",
           url: "http://www.google.com",
         },
       ],
@@ -88,11 +97,23 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       category: "Impact of Our Work",
       dropdown: [
         {
-          text: "test2",
+          text: "Overview",
           url: "http://www.google.com",
         },
         {
-          text: "test3",
+          text: "What makes us different",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Where we serve",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Blog",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Food aid request",
           url: "http://www.google.com",
         },
       ],
@@ -101,11 +122,51 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       category: "About Us",
       dropdown: [
         {
-          text: "test2",
+          text: "Overview",
           url: "http://www.google.com",
         },
         {
-          text: "test3",
+          text: "Our mission",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Financial accountability",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Values",
+          url: "http://www.google.com",
+        },
+        {
+          text: "FAQs",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Careers",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Board of directors",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Executive staff",
+          url: "http://www.google.com",
+        },
+        {
+          text: "FMSC history",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Resources",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Contact us",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Request a speaker",
           url: "http://www.google.com",
         },
       ],
@@ -114,11 +175,19 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       category: "MarketPlace",
       dropdown: [
         {
-          text: "test2",
+          text: "Shop online",
           url: "http://www.google.com",
         },
         {
-          text: "test3",
+          text: "Shop in store",
+          url: "http://www.google.com",
+        },
+        {
+          text: "Meet the artisans",
+          url: "http://www.google.com",
+        },
+        {
+          text: "What is MarketPlace",
           url: "http://www.google.com",
         },
       ],
@@ -132,15 +201,6 @@ export function DesigningWithTheMindInMindChapterTwelve() {
           <img src={FMSCLogo} alt="" />
         </a>
         <div className="designingTwelveFMSCWrap-navbar__nav">
-          {/* {NavItem.content.map((Nav) => {
-              return (
-                <li key={Nav.NavBarName}>
-                  <a href="#" onClick={Nav.ToggleLink}>
-                    {Nav.NavBarName}
-                  </a>
-                </li>
-              );
-            })} */}
           <FMSCLinkGrid props={testContent2} />
         </div>
         <div className="designingTwelveFMSCWrap-navbar-buttonContainer">

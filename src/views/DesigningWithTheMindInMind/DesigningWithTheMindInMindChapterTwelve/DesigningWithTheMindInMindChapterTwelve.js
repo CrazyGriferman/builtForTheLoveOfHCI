@@ -9,6 +9,7 @@ import {
   carouselImg4,
   carouselImg5,
 } from "../../../assets/index.js";
+import { FMSCDropdownForm } from "../../../components/DesigningWithTheMindInMindComponents/FMSC/FMSCDropdownForm";
 export function DesigningWithTheMindInMindChapterTwelve() {
   const testContent = [
     {
@@ -194,6 +195,23 @@ export function DesigningWithTheMindInMindChapterTwelve() {
     },
   ];
 
+  const SearchIcon = () => (
+    <a href="#">
+      <i className="fa fa-search"></i>
+    </a>
+  );
+
+  const SearchForm = () => (
+    <form className="designingTwelveFMSCWrap-navbar__search_form">
+      <input type="text" name="query" placeholder="Search" />
+      <span>
+        <button type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </span>
+    </form>
+  );
+
   return (
     <section className="designingTwelveFMSCWrap">
       <nav className="designingTwelveFMSCWrap-navbar">
@@ -204,21 +222,14 @@ export function DesigningWithTheMindInMindChapterTwelve() {
           <FMSCLinkGrid props={testContent2} />
         </div>
         <div className="designingTwelveFMSCWrap-navbar-buttonContainer">
-          <button>32423</button>
-          <button>543543</button>
+          <button>Donate</button>
+          <button>Volunteer</button>
         </div>
         <div className="designingTwelveFMSCWrap-navbar__search">
-          <ul>
-            <a href="">
-              <i className="fa fa-search"></i>
-            </a>
-            <li>
-              <ul>
-                <li>432</li>
-                <li>432</li>
-              </ul>
-            </li>
-          </ul>
+          <FMSCDropdownForm
+            dropdownIcon={<SearchIcon />}
+            dropdownForm={<SearchForm />}
+          />
         </div>
         <div className="designingTwelveFMSCWrap-navbar__login">
           <a href="">

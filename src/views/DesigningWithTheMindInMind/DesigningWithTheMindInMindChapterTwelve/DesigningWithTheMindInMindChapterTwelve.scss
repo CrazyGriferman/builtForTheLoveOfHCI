@@ -71,10 +71,23 @@
       background-color: #124975;
       margin: 0 1em 0 1em;
       a {
-        padding: 0 6px 0 6px;
+        padding: 0.5em 1em 0.5em 1em;
         color: #fff;
         &:hover {
           background-color: #246192;
+        }
+      }
+      //位置
+      ul {
+        left: -350%;
+        top: 100%;
+      }
+      &_form {
+        padding: 2em;
+        background-color: blue;
+        input {
+          width: 10em;
+          height: 2em;
         }
       }
     }

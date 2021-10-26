@@ -6,7 +6,9 @@ export function FMSCDropdownForm({ dropdownIcon, dropdownForm }) {
     dropdownForm && (
       <ul className="dropdownForm">
         <li>
-          {dropdownIcon}
+          <a href="" className="dropdownForm-select">
+            {dropdownIcon}
+          </a>
           <ul className="dropdownForm-list">
             <li>{dropdownForm}</li>
           </ul>

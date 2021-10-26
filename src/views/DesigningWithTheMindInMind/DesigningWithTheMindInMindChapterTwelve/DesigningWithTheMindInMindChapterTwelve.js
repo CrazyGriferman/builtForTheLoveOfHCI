@@ -195,11 +195,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
     },
   ];
 
-  const SearchIcon = () => (
-    <a href="#">
-      <i className="fa fa-search"></i>
-    </a>
-  );
+  const SearchIcon = () => <i className="fa fa-search"></i>;
 
   const SearchForm = () => (
     <form className="designingTwelveFMSCWrap-navbar__search_form">

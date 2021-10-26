@@ -79,15 +79,18 @@
       }
       //位置
       ul {
-        left: -350%;
+        right: 100%;
         top: 100%;
       }
       &_form {
-        padding: 2em;
-        background-color: blue;
-        input {
-          width: 10em;
-          height: 2em;
+        padding: 1em;
+        background-color: #124975;
+        display: flex;
+        span {
+          button {
+            width: 3em;
+            height: 3em;
+          }
         }
       }
     }

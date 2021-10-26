@@ -208,6 +208,31 @@ export function DesigningWithTheMindInMindChapterTwelve() {
     </form>
   );
 
+  const LoginIcon = () => <i className="fa fa-lock"> login</i>;
+
+  const LoginForm = () => (
+    <form className="designingTwelveFMSCWrap-navbar__login_form">
+      <div className="designingTwelveFMSCWrap-navbar__login_form_group">
+        <input type="email" placeholder="Email address" />
+        <span>Email address is required.</span>
+      </div>
+      <div className="designingTwelveFMSCWrap-navbar__login_form_group">
+        <input type="password" placeholder="Password" />
+        <span>Password is required.</span>
+      </div>
+      <div className="designingTwelveFMSCWrap-navbar__login_form_group__help">
+        Forgot password?
+      </div>
+      <div className="designingTwelveFMSCWrap-navbar__login_form_group">
+        <button type="submit">Log in</button>
+      </div>
+      <div className="designingTwelveFMSCWrap-navbar__login_form__divider"></div>
+      <div className="designingTwelveFMSCWrap-navbar__login_form_group">
+        <a href="#">Create Account</a>
+      </div>
+    </form>
+  );
+
   return (
     <section className="designingTwelveFMSCWrap">
       <nav className="designingTwelveFMSCWrap-navbar">
@@ -228,10 +253,10 @@ export function DesigningWithTheMindInMindChapterTwelve() {
           />
         </div>
         <div className="designingTwelveFMSCWrap-navbar__login">
-          <a href="">
-            <i className="fa fa-lock"></i>
-            <span> Log in</span>
-          </a>
+          <FMSCDropdownForm
+            dropdownIcon={<LoginIcon />}
+            dropdownForm={<LoginForm />}
+          />
         </div>
       </nav>
       <main>

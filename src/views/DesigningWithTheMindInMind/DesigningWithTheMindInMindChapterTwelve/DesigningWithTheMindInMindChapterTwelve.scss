@@ -53,13 +53,10 @@
         top: 3.5%;
         display: inline;
         color: #246192;
-        cursor: pointer;
         background-color: #fff;
         margin: 0;
-        padding: 6px 12px;
-        border: 1px solid #487bff;
+        padding: 0.5em 1em;
         text-decoration: none;
-        border-radius: 5px;
         font-size: 18px;
         margin: 0.2em;
         &:hover {
@@ -96,13 +93,67 @@
     }
     &__login {
       background-color: #124975;
-      color: #fff;
+      color: black;
       margin: 0 1em 0 0;
       a {
-        padding: 0px 1em 0px 1em;
+        padding: 0.5em 1em 0.5em 1em;
         color: #fff;
         &:hover {
           background-color: #246192;
+        }
+      }
+      ul {
+        left: -150%;
+        top: 100%;
+      }
+      &_form {
+        padding: 1em;
+        background-color: white;
+        display: block;
+        &_group {
+          display: line;
+          padding: 0.5em 0 0.5em 0;
+          position: relative;
+          a {
+            text-align: center;
+            //padding: 0.5em 1em 0.5em 1em;
+            color: #fff;
+            background-color: #246192;
+            &:hover {
+              background-color: #02c1d5;
+            }
+          }
+          span {
+            display: none;
+          }
+          input {
+            height: 3em;
+          }
+          button {
+            display: block;
+            color: #fff;
+            width: 100%;
+            padding: 0.5em 1em 0.5em 1em;
+            background-color: #246192;
+            &:hover {
+              background-color: #02c1d5;
+            }
+          }
+        }
+        &__divider {
+          background-color: #e5e5e5;
+          margin: 0.5em 0;
+          height: 1px;
+        }
+
+        &_alert {
+        }
+
+        &_help {
+          a {
+            font-size: 16px;
+            left: 100%;
+          }
         }
       }
     }
@@ -175,10 +226,13 @@
     li {
       background-color: #246192;
       width: 22vw;
-      display: flex;
-      padding: 0.8em;
+      display: inline-block;
+      position: relative;
       margin: 0 1em 0 1em;
       a {
+        display: inline-block;
+        width: 100%;
+        padding: 1em 1em 1em 1em;
         color: #fff;
       }
       &:hover {

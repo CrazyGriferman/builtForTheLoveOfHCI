@@ -268,37 +268,43 @@ export function DesigningWithTheMindInMindChapterTwelve() {
             <li></li>
             <li></li>
           </ol>
-          <div className="designingTwelveFMSCWrap-carousel_item">
-            <div className="designingTwelveFMSCWrap-carousel_item__caption">
-              <h4>
-                <a href="">Christmas Around the World</a>
-                <br />
-                <br />
-                <span>
-                  Experience the sights, sounds and traditions of the Christmas
-                  season in FMSC partner communities.
+          <div className="designingTwelveFMSCWrap-carousel_inner">
+            <div className="designingTwelveFMSCWrap-carousel_item">
+              <div className="designingTwelveFMSCWrap-carousel_item__caption">
+                <h4>
+                  <a href="">Christmas Around the World</a>
                   <br />
                   <br />
-                  Join us for free.
-                </span>
-                <br />
-                <br />
-                <button>
-                  <span>Give now &gt;</span>
-                </button>
-              </h4>
+                  <span>
+                    Experience the sights, sounds and traditions of the
+                    Christmas season in FMSC partner communities.
+                    <br />
+                    <br />
+                    Join us for free.
+                  </span>
+                  <br />
+                  <br />
+                  <button>
+                    <span>Give now &gt;</span>
+                  </button>
+                </h4>
+              </div>
+              <img src={carouselImg1} alt="" />
             </div>
-            <img src={carouselImg1} alt="" />
+            <div className="designingTwelveFMSCWrap-carousel_item"></div>
+            <div className="designingTwelveFMSCWrap-carousel_item"></div>
+            <div className="designingTwelveFMSCWrap-carousel_item"></div>
           </div>
-          <div className="designingTwelveFMSCWrap-carousel_item"></div>
-          <div className="designingTwelveFMSCWrap-carousel_item"></div>
-          <div className="designingTwelveFMSCWrap-carousel_item"></div>
-          <a href="">
-            <i></i>
-          </a>
-          <a href="">
-            <i></i>
-          </a>
+          <div className="designingTwelveFMSCWrap-carousel_arrow left">
+            <a href="">
+              <i className="fa fa-angle-left"></i>
+            </a>
+          </div>
+          <div className="designingTwelveFMSCWrap-carousel_arrow right">
+            <a href="">
+              <i className="fa fa-angle-right"></i>
+            </a>
+          </div>
         </div>
         <div className="designingTwelveFMSCWrap-buttonList">
           <FMSCLinkGrid props={testContent} />

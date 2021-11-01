@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { FMSCLinkGrid } from "../../../components/DesigningWithTheMindInMindComponents/FMSC/FMSCLinkGrid";
+import {
+  FMSCLinkGrid,
+  FMSCDropdownForm,
+  FMSCImageCarousel,
+} from "../../../components/index.js";
 import "./DesigningWithTheMindInMindChapterTwelve.scss";
 import {
   FMSCLogo,
@@ -8,8 +12,10 @@ import {
   carouselImg3,
   carouselImg4,
   carouselImg5,
+  oldBookWithLight,
+  oldBookPage,
+  pureBrownBackground,
 } from "../../../assets/index.js";
-import { FMSCDropdownForm } from "../../../components/DesigningWithTheMindInMindComponents/FMSC/FMSCDropdownForm";
 export function DesigningWithTheMindInMindChapterTwelve() {
   const testContent = [
     {
@@ -22,6 +28,8 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       category: "Blog",
     },
   ];
+
+  const images = [oldBookWithLight, oldBookPage, pureBrownBackground];
 
   const testContent2 = [
     {
@@ -233,6 +241,17 @@ export function DesigningWithTheMindInMindChapterTwelve() {
     </form>
   );
 
+  const ImageCarousel = [
+    {
+      img: oldBookPage,
+      content: () => <div>test</div>,
+    },
+    {
+      img: oldBookWithLight,
+      content: () => <div>test</div>,
+    },
+  ];
+
   return (
     <section className="designingTwelveFMSCWrap">
       <nav className="designingTwelveFMSCWrap-navbar">
@@ -260,6 +279,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
         </div>
       </nav>
       <main>
+        {/* <FMSCImageCarousel imageCarousel={ImageCarousel} /> */}
         <div className="designingTwelveFMSCWrap-carousel">
           <ol className="designingTwelveFMSCWrap-carousel_indicators">
             <li></li>
@@ -296,12 +316,12 @@ export function DesigningWithTheMindInMindChapterTwelve() {
             <div className="designingTwelveFMSCWrap-carousel_item"></div>
           </div>
           <div className="designingTwelveFMSCWrap-carousel_arrow left">
-            <a href="">
+            <a href="#">
               <i className="fa fa-angle-left"></i>
             </a>
           </div>
           <div className="designingTwelveFMSCWrap-carousel_arrow right">
-            <a href="">
+            <a href="#">
               <i className="fa fa-angle-right"></i>
             </a>
           </div>
@@ -316,3 +336,5 @@ export function DesigningWithTheMindInMindChapterTwelve() {
     </section>
   );
 }
+
+export default DesigningWithTheMindInMindChapterTwelve;

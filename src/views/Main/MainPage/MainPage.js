@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   designingImg,
   designingInterfacesImg,
@@ -6,18 +6,19 @@ import {
   webFormDesignImg,
 } from "../../../assets/index.js";
 import { useHistory } from "react-router";
-import { debounce } from "../../../utils/index.js";
 import "./MainPage.scss";
 
 export function MainPage() {
   const RouterHistory = useHistory();
-  //const [historyPage, setHistoryPage] = useState(0);
 
   useEffect(() => {
     /* bug: 翻页效果必须一页一页来，现在点击后面的页面仍然能够翻 */
     /* 目前想到的解决办法： 让某个事件在n秒内只能被监听到一次 */
     /* 点击翻页效果 */
-    /* 想到方法了，只要用最经典的节流 */
+    /* 一开始想用结流函数，但是他监听的是每页点击的事件，
+    每页是独立的，因而这种节流只能针对在短时间内点击同一页面而言，
+    最终想出来的解决办法： 更改transition时间，让用户没时间在短时间点两下
+    */
     const pages = document.getElementsByClassName("page");
     for (let i = 0; i < pages.length; i++) {
       let page = pages[i];
@@ -50,6 +51,7 @@ export function MainPage() {
         <div className="pages">
           <div className="page ">
             <h1>HCI Gallery</h1>
+            <section>Interactive && ARIA-based websites demo</section>
           </div>
           <div className="page ">
             <img className="pageCover" src={designingImg} alt="" />

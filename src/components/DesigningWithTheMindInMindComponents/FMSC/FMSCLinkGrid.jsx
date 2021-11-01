@@ -27,3 +27,5 @@ export function FMSCLinkGrid(props) {
     )
   );
 }
+
+export default FMSCLinkGrid;

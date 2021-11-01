@@ -1,15 +1,13 @@
 .test {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
 
   &-carousel {
     position: relative;
-    width: 100%;
-    height: 100%;
+    display: block;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 
@@ -31,12 +29,25 @@
 
     &_slide {
       display: flex;
+      flex-basis: 100%;
+      position: absolute;
       width: 100%;
-      height: 100%;
-      img {
+      height: 100vh;
+
+      &_item {
         width: 100vw;
-        height: auto;
-        object-fit: cover;
+        height: 100vh;
+        div {
+          position: absolute;
+          background-color: blue;
+          left: 0;
+        }
+        img {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+        }
       }
     }
   }

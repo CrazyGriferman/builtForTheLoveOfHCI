@@ -1,12 +1,13 @@
 import React from "react";
 import "./FMSCDropdownForm.scss";
 export function FMSCDropdownForm({ dropdownIcon, dropdownForm }) {
+  console.log(dropdownIcon);
   return (
     dropdownIcon &&
     dropdownForm && (
       <ul className="dropdownForm">
         <li>
-          <a href="" className="dropdownForm-select">
+          <a href="#" className="dropdownForm-select">
             {dropdownIcon}
           </a>
           <ul className="dropdownForm-list">
@@ -17,3 +18,4 @@ export function FMSCDropdownForm({ dropdownIcon, dropdownForm }) {
     )
   );
 }
+export default FMSCDropdownForm;

@@ -1,4 +1,4 @@
-export const throttle = (func, limit) => {
+const throttle = (func, limit) => {
   let lastFunc;
   let lastRan;
   return function () {
@@ -18,3 +18,5 @@ export const throttle = (func, limit) => {
     }
   };
 };
+
+export default throttle;

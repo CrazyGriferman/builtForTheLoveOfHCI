@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   designingImg,
   designingInterfacesImg,
@@ -6,47 +6,39 @@ import {
   webFormDesignImg,
 } from "../../../assets/index.js";
 import { useHistory } from "react-router";
+import { debounce } from "../../../utils/index.js";
 import "./MainPage.scss";
 
 export function MainPage() {
   const RouterHistory = useHistory();
+  //const [historyPage, setHistoryPage] = useState(0);
+
   useEffect(() => {
     /* bug: 翻页效果必须一页一页来，现在点击后面的页面仍然能够翻 */
     /* 目前想到的解决办法： 让某个事件在n秒内只能被监听到一次 */
     /* 点击翻页效果 */
+    /* 想到方法了，只要用最经典的节流 */
     const pages = document.getElementsByClassName("page");
-
     for (let i = 0; i < pages.length; i++) {
       let page = pages[i];
       if (i % 2 === 0) {
         page.style.zIndex = pages.length - i; /* 改变z层,让这些页面都排好 */
       }
     }
-
     (function () {
       for (let i = 0; i < pages.length; i++) {
         let page = pages[i];
         page.pageNum = i + 1;
-        page.onwheel = function (event) {
-          if (this.pageNum % 2 === 0 && event.deltaY < 0) {
-            // scroll up - left flip
-            this.classList.remove("flipped");
-            this.previousElementSibling.classList.remove("flipped");
-          } else {
-            // scroll down - right flip
-            this.classList.add("flipped");
-            this.nextElementSibling.classList.add("flipped");
-          }
-        };
-        page.onclick = function () {
-          if (this.pageNum % 2 === 0) {
-            this.classList.remove("flipped");
-            this.previousElementSibling.classList.remove("flipped");
-          } else {
-            this.classList.add("flipped");
-            this.nextElementSibling.classList.add("flipped");
-          }
-        };
+        page.addEventListener("click", function () {
+          if (this.pageNum)
+            if (this.pageNum % 2 === 0) {
+              this.classList.remove("flipped");
+              this.previousElementSibling.classList.remove("flipped");
+            } else {
+              this.classList.add("flipped");
+              this.nextElementSibling.classList.add("flipped");
+            }
+        });
       }
     })();
     /* 点击翻页效果 */

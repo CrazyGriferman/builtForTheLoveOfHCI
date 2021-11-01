@@ -3,20 +3,24 @@ import { DesigningWithTheMindInMindChapterTwelve } from "./views/DesigningWithTh
 import "./App.scss";
 import { Test } from "./components/DesigningWithTheMindInMindComponents/FMSC/Test";
 
-/* function App() {
+function App() {
   return (
     <>
       <RenderRoutes routes={ROUTES} />
     </>
   );
-} */
+}
 
-/* function App() {
+/*
+function App() {
   return <DesigningWithTheMindInMindChapterTwelve />;
-} */
+}
+*/
 
+/*
 function App() {
   return <Test />;
 }
+*/
 
 export default App;

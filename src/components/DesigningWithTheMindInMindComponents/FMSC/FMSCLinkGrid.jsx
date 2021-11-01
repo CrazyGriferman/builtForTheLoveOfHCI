@@ -27,12 +27,3 @@ export function FMSCLinkGrid(props) {
     )
   );
 }
-
-/* 
-<a
-              className={[`linkGrid__a`, `${props.props.className}__a`].join(
-                " "
-              )}
-              href={item.url}
-            >
-             */

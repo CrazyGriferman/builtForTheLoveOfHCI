@@ -2,73 +2,53 @@ import React, { useEffect, useRef, useState } from "react";
 import "./FMSCImageCarousel.scss";
 
 export function FMSCImageCarousel({ imageCarousel }) {
-  const [index, setIndex] = useState(0);
-  const [width, setWidth] = useState(0);
-  const [xPosition, setXPosition] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(1);
 
-  const slideRef = useRef();
-
-  useEffect(() => {
-    if (slideRef.current) {
-      const width = slideRef.current.clientWidth;
-      setWidth(width);
+  const nextSlide = () => {
+    if (slideIndex !== imageCarousel.length) {
+      setSlideIndex(slideIndex + 1);
+    } else if (slideIndex === imageCarousel.length) {
+      setSlideIndex(1);
     }
-  }, [setWidth]);
-
-  window.addEventListener("resize", function () {
-    const width = slideRef.current.clientWidth;
-    //setXPosition(xPosition + width);
-    setWidth(width);
-  });
-
-  const handleClickPrev = () => {
-    if (index === 0) return;
-    setIndex(index - 1);
-    setXPosition(xPosition + width);
   };
 
-  const handleClickNext = () => {
-    //1，2，3，4 判断4到1的情况
-    if (index === imageCarousel.length - 1) {
-      setIndex(0);
-      setXPosition(0);
-    } else {
-      setIndex(index + 1);
-      setXPosition(xPosition - width);
+  const prevSlide = () => {
+    if (slideIndex !== 1) {
+      setSlideIndex(slideIndex - 1);
+    } else if (slideIndex === 1) {
+      setSlideIndex(imageCarousel.length);
     }
+  };
+
+  const moveDot = (index) => {
+    setSlideIndex(index);
   };
 
   return (
     imageCarousel && (
-      <div className="test">
-        <div className="test-carousel">
+      <div className="carousel">
+        {imageCarousel.map((item, index) => (
           <div
-            className="test-carousel_slide"
-            style={{
-              transition: "transform 0.6s ease-in-out",
-              transform: `translateX(${xPosition}px)`,
-            }}
-            ref={slideRef}
+            className={
+              slideIndex === index + 1
+                ? "carousel-slide active-anim"
+                : "carousel-slide"
+            }
           >
-            {imageCarousel.map((item, i) => (
-              <div className="test-carousel_slide_item">
-                {item.caption}
-                <img src={item.img} alt="test" key={i} />
-              </div>
-            ))}
+            {item.caption}
+            <img src={item.img} alt="test" key={index} />
           </div>
-          <button
-            className="test-carousel_button left"
-            onClick={handleClickPrev}
-          >
-            prev
-          </button>
-          <button
-            className="test-carousel_button right"
-            onClick={handleClickNext}
-          >
-            next
-          </button>
+        ))}
+
+        <div className="carousel-arrow right">
+          <a href="#" onClick={nextSlide}>
+            <i className="fa fa-angle-right"></i>
+          </a>
+        </div>
+        <div className="carousel-arrow left">
+          <a href="#" onClick={prevSlide}>
+            <i className="fa fa-angle-left"></i>
+          </a>
         </div>
       </div>
     )

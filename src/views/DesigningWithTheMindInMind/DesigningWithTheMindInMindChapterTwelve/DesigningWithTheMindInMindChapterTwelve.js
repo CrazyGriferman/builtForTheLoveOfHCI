@@ -243,11 +243,11 @@ export function DesigningWithTheMindInMindChapterTwelve() {
 
   const ImageCarousel = [
     {
-      img: oldBookPage,
+      img: carouselImg1,
       content: () => <div>test</div>,
     },
     {
-      img: oldBookWithLight,
+      img: carouselImg2,
       content: () => <div>test</div>,
     },
   ];
@@ -279,8 +279,11 @@ export function DesigningWithTheMindInMindChapterTwelve() {
         </div>
       </nav>
       <main>
-        {/* <FMSCImageCarousel imageCarousel={ImageCarousel} /> */}
-        <div className="designingTwelveFMSCWrap-carousel">
+        <FMSCImageCarousel
+          className="image-carousel"
+          imageCarousel={ImageCarousel}
+        />
+        {/* <div className="designingTwelveFMSCWrap-carousel">
           <ol className="designingTwelveFMSCWrap-carousel_indicators">
             <li></li>
             <li></li>
@@ -325,7 +328,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
               <i className="fa fa-angle-right"></i>
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="designingTwelveFMSCWrap-buttonList">
           <FMSCLinkGrid props={testContent} />
         </div>

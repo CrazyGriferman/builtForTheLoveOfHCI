@@ -2,7 +2,6 @@
   li {
     display: inline-block;
     position: relative;
-    transition-duration: 0.5s;
     a {
       display: inline-block;
     }
@@ -14,7 +13,6 @@
       width: auto;
     }
     ul {
-      transition: all 0.5s ease;
       visibility: hidden;
       opacity: 0;
       display: none;

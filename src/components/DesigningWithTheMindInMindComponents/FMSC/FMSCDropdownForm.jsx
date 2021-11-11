@@ -1,7 +1,6 @@
 import React from "react";
 import "./FMSCDropdownForm.scss";
 export function FMSCDropdownForm({ dropdownIcon, dropdownForm }) {
-  console.log(dropdownIcon);
   return (
     dropdownIcon &&
     dropdownForm && (

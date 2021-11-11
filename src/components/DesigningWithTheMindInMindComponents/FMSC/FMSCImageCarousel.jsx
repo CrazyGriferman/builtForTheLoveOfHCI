@@ -3,7 +3,7 @@ import "./FMSCImageCarousel.scss";
 
 export function FMSCImageCarousel({ imageCarousel }) {
   const [slideIndex, setSlideIndex] = useState(1);
-
+  console.log(imageCarousel);
   const nextSlide = () => {
     if (slideIndex !== imageCarousel.length) {
       setSlideIndex(slideIndex + 1);

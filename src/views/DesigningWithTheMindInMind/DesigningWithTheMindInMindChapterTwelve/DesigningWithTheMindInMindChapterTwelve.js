@@ -244,11 +244,17 @@ export function DesigningWithTheMindInMindChapterTwelve() {
   const ImageCarousel = [
     {
       img: carouselImg1,
-      content: () => <div>test</div>,
+      caption: (
+        <div className="carouselContent">
+          <section>
+            <a href="#">hello</a>
+          </section>
+        </div>
+      ),
     },
     {
       img: carouselImg2,
-      content: () => <div>test</div>,
+      caption: <div>test</div>,
     },
   ];
 
@@ -279,10 +285,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
         </div>
       </nav>
       <main>
-        <FMSCImageCarousel
-          className="image-carousel"
-          imageCarousel={ImageCarousel}
-        />
+        <FMSCImageCarousel imageCarousel={ImageCarousel} />
         {/* <div className="designingTwelveFMSCWrap-carousel">
           <ol className="designingTwelveFMSCWrap-carousel_indicators">
             <li></li>

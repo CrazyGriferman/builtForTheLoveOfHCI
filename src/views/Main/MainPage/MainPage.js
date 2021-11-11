@@ -51,7 +51,7 @@ export function MainPage() {
         <div className="pages">
           <div className="page ">
             <h1>HCI Gallery</h1>
-            <section>Interactive && ARIA-based websites demo</section>
+            <section>Interactive ARIA-based websites demo</section>
           </div>
           <div className="page ">
             <img className="pageCover" src={designingImg} alt="" />

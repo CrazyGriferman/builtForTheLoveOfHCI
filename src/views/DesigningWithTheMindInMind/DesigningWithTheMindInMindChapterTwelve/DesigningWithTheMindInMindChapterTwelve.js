@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  FMSCLinkGrid,
+  FMSCGridWithDropDown,
   FMSCDropdownForm,
   FMSCImageCarousel,
 } from "../../../components/index.js";
@@ -29,8 +29,6 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       category: "Blog",
     },
   ];
-
-  const images = [oldBookWithLight, oldBookPage, pureBrownBackground];
 
   const testContent2 = [
     {
@@ -247,7 +245,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       img: carouselImg1,
       caption: (
         <div className="carouselContent">
-          <a href="">Christmas Around the World</a>
+          <a href="#">Christmas Around the World</a>
           <br />
           <br />
           <span>
@@ -268,7 +266,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       img: carouselImg4,
       caption: (
         <div className="carouselContent">
-          <a href="">We're hiring!</a>
+          <a href="#">We're hiring!</a>
           <br />
           <br />
           <span>
@@ -287,7 +285,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       img: carouselImg6,
       caption: (
         <div className="carouselContent">
-          <a href="">Give gifts of hope</a>
+          <a href="#">Give gifts of hope</a>
           <br />
           <br />
           <span>
@@ -314,7 +312,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
           <img src={FMSCLogo} alt="" />
         </a>
         <div className="designingTwelveFMSCWrap-navbar__nav">
-          <FMSCLinkGrid props={testContent2} />
+          <FMSCGridWithDropDown props={testContent2} />
         </div>
         <div className="designingTwelveFMSCWrap-navbar-buttonContainer">
           <button>Donate</button>
@@ -337,54 +335,8 @@ export function DesigningWithTheMindInMindChapterTwelve() {
         <div className="designingTwelveFMSCWrap-carousel">
           <FMSCImageCarousel imageCarousel={ImageCarousel} />
         </div>
-        {/* <div className="designingTwelveFMSCWrap-carousel">
-          <ol className="designingTwelveFMSCWrap-carousel_indicators">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-          <div className="designingTwelveFMSCWrap-carousel_inner">
-            <div className="designingTwelveFMSCWrap-carousel_item">
-              <div className="designingTwelveFMSCWrap-carousel_item__caption">
-                <h4>
-                  <a href="">Christmas Around the World</a>
-                  <br />
-                  <br />
-                  <span>
-                    Experience the sights, sounds and traditions of the
-                    Christmas season in FMSC partner communities.
-                    <br />
-                    <br />
-                    Join us for free.
-                  </span>
-                  <br />
-                  <br />
-                  <button>
-                    <span>Give now &gt;</span>
-                  </button>
-                </h4>
-              </div>
-              <img src={carouselImg1} alt="" />
-            </div>
-            <div className="designingTwelveFMSCWrap-carousel_item"></div>
-            <div className="designingTwelveFMSCWrap-carousel_item"></div>
-            <div className="designingTwelveFMSCWrap-carousel_item"></div>
-          </div>
-          <div className="designingTwelveFMSCWrap-carousel_arrow left">
-            <a href="#">
-              <i className="fa fa-angle-left"></i>
-            </a>
-          </div>
-          <div className="designingTwelveFMSCWrap-carousel_arrow right">
-            <a href="#">
-              <i className="fa fa-angle-right"></i>
-            </a>
-          </div>
-        </div> */}
         <div className="designingTwelveFMSCWrap-buttonList">
-          <FMSCLinkGrid props={testContent} />
+          <FMSCGridWithDropDown props={testContent} />
         </div>
         <div className="designingTwelveFMSCWrap-fluid">
           <h1>How it works</h1>

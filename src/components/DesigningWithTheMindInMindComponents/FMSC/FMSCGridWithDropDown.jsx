@@ -1,7 +1,7 @@
 import React from "react";
-import "./FMSCLinkGrid.scss";
+import "./FMSCGridWithDropDown.scss";
 
-export function FMSCLinkGrid(props) {
+export function FMSCGridWithDropDown(props) {
   return (
     props.props && (
       <ul className="dropdown">
@@ -28,4 +28,4 @@ export function FMSCLinkGrid(props) {
   );
 }
 
-export default FMSCLinkGrid;
+export default FMSCGridWithDropDown;

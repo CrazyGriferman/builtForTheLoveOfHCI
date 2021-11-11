@@ -4,7 +4,7 @@ import { Navigation } from "./Navigation";
 
 import { FMSCDropdownForm } from "../components/DesigningWithTheMindInMindComponents/FMSC/FMSCDropdownForm";
 import { FMSCImageCarousel } from "../components/DesigningWithTheMindInMindComponents/FMSC/FMSCImageCarousel";
-import { FMSCLinkGrid } from "../components/DesigningWithTheMindInMindComponents/FMSC/FMSCLinkGrid";
+import { FMSCGridWithDropDown } from "./DesigningWithTheMindInMindComponents/FMSC/FMSCGridWithDropDown";
 
 export {
   Footer,
@@ -12,5 +12,5 @@ export {
   Navigation,
   FMSCDropdownForm,
   FMSCImageCarousel,
-  FMSCLinkGrid,
+  FMSCGridWithDropDown,
 };

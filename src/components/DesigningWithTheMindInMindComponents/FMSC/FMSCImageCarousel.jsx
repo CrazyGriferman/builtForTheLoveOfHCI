@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import "./FMSCImageCarousel.scss";
 
 export function FMSCImageCarousel({ imageCarousel }) {
@@ -49,6 +49,15 @@ export function FMSCImageCarousel({ imageCarousel }) {
           <a href="#" onClick={prevSlide}>
             <i className="fa fa-angle-left"></i>
           </a>
+        </div>
+
+        <div className="carousel-dots">
+          {Array.from({ length: imageCarousel.length }).map((item, index) => (
+            <div
+              onClick={() => moveDot(index + 1)}
+              className={slideIndex === index + 1 ? "dot active" : "dot"}
+            ></div>
+          ))}
         </div>
       </div>
     )

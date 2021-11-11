@@ -4,6 +4,7 @@ import carouselImg2 from "./designing/carousel-img2.jpeg";
 import carouselImg3 from "./designing/carousel-img3.jpeg";
 import carouselImg4 from "./designing/carousel-img4.jpeg";
 import carouselImg5 from "./designing/carousel-img5.jpeg";
+import carouselImg6 from "./designing/carousel-img6.jpeg";
 
 import oldBookPage from "./old-book-page.jpeg";
 import designingImg from "./designing-with-the-mind-in-mind.jpeg";
@@ -20,6 +21,7 @@ export {
   carouselImg3,
   carouselImg4,
   carouselImg5,
+  carouselImg6,
   oldBookPage,
   designingImg,
   dontMakeMeThinkImg,

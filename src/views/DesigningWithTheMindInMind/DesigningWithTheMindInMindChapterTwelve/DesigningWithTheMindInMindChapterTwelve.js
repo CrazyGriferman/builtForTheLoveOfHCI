@@ -12,6 +12,7 @@ import {
   carouselImg3,
   carouselImg4,
   carouselImg5,
+  carouselImg6,
   oldBookWithLight,
   oldBookPage,
   pureBrownBackground,
@@ -246,15 +247,63 @@ export function DesigningWithTheMindInMindChapterTwelve() {
       img: carouselImg1,
       caption: (
         <div className="carouselContent">
-          <section>
-            <a href="#">hello</a>
-          </section>
+          <a href="">Christmas Around the World</a>
+          <br />
+          <br />
+          <span>
+            Experience the sights, sounds and traditions of the Christmas season
+            in FMSC partner communities.
+            <br />
+            Join us for free.
+          </span>
+          <br />
+          <br />
+          <button>
+            <span>Register &gt;</span>
+          </button>
         </div>
       ),
     },
     {
-      img: carouselImg2,
-      caption: <div>test</div>,
+      img: carouselImg4,
+      caption: (
+        <div className="carouselContent">
+          <a href="">We're hiring!</a>
+          <br />
+          <br />
+          <span>
+            Looking for a way to use your skills to end hunger?{" "}
+            <strong>Join our team of world changers.</strong>
+          </span>
+          <br />
+          <br />
+          <button>
+            <span>See open positions &gt;</span>
+          </button>
+        </div>
+      ),
+    },
+    {
+      img: carouselImg6,
+      caption: (
+        <div className="carouselContent">
+          <a href="">Give gifts of hope</a>
+          <br />
+          <br />
+          <span>
+            This Christmas season, when you give $88, you'll get this
+            handcrafted ornament.
+            <br />
+            <br />
+            And, you'll feed a child for an entire year.
+          </span>
+          <br />
+          <br />
+          <button>
+            <span>Give now &gt;</span>
+          </button>
+        </div>
+      ),
     },
   ];
 
@@ -285,7 +334,9 @@ export function DesigningWithTheMindInMindChapterTwelve() {
         </div>
       </nav>
       <main>
-        <FMSCImageCarousel imageCarousel={ImageCarousel} />
+        <div className="designingTwelveFMSCWrap-carousel">
+          <FMSCImageCarousel imageCarousel={ImageCarousel} />
+        </div>
         {/* <div className="designingTwelveFMSCWrap-carousel">
           <ol className="designingTwelveFMSCWrap-carousel_indicators">
             <li></li>

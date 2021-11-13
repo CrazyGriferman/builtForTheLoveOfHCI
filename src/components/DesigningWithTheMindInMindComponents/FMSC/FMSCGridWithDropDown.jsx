@@ -12,6 +12,11 @@ export function FMSCGridWithDropDown(props) {
   return (
     props.props && (
       <>
+        <div className="menu-icon" onClick={handleClick}>
+          <a href="#">
+            <i className={click ? "fa  fa-times" : "fa  fa-bars"} />
+          </a>
+        </div>
         <ul className={click ? "dropdown active" : "dropdown"}>
           {props.props.map((item) => (
             <li>
@@ -32,11 +37,6 @@ export function FMSCGridWithDropDown(props) {
             </li>
           ))}
         </ul>
-        <div className="menu-icon" onClick={handleClick}>
-          <a href="#">
-            <i className={click ? "fa  fa-times" : "fa  fa-bars"} />
-          </a>
-        </div>
       </>
     )
   );

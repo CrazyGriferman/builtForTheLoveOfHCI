@@ -25,12 +25,55 @@
 }
 
 .menu-icon {
-  display: inline-block;
+  display: none;
   background-color: #124957;
   font-size: 20px;
   background-color: purple;
   a {
     color: #fff;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .menu-icon {
+    display: inline-block;
+  }
+  .dropdown {
+    display: none;
+    &.active {
+      position: absolute;
+      display: block;
+      left: 0;
+      z-index: 102;
+      width: 100vw;
+      li {
+        display: block;
+        position: relative;
+        height: max-content;
+        a {
+          width: 100%;
+          text-align: center;
+        }
+
+        &:hover > ul,
+        ul:hover {
+          display: block;
+        }
+        ul {
+          //display: block;
+          width: 100vw;
+          position: relative;
+          li {
+            position: relative;
+            a {
+              text-align: center;
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }

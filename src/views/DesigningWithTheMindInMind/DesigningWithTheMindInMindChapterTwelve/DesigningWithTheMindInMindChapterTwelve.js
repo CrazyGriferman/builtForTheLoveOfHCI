@@ -292,7 +292,6 @@ export function DesigningWithTheMindInMindChapterTwelve() {
             This Christmas season, when you give $88, you'll get this
             handcrafted ornament.
             <br />
-            <br />
             And, you'll feed a child for an entire year.
           </span>
           <br />

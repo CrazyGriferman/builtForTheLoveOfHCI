@@ -16,10 +16,4 @@ function App() {
   return <DesigningWithTheMindInMindChapterTwelve />;
 }
 
-/*
-function App() {
-  return <Test />;
-}
-*/
-
 export default App;

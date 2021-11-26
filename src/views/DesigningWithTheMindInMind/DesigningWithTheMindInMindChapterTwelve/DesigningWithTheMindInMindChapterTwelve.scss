@@ -5,6 +5,7 @@ $navbar-background-color: #4779a3;
 $text-color: #246192;
 $title-color: #dde5ed;
 $dropdown-border-color: black;
+$switch-size: 1315px;
 
 @mixin icon-style-set {
   display: inline-block;
@@ -38,6 +39,9 @@ $dropdown-border-color: black;
       }
     }
     &__nav {
+      @media screen and (max-width: $switch-size) {
+        order: 3;
+      }
       display: inline-block;
       overflow: visible;
       font-size: 14px;
@@ -45,9 +49,10 @@ $dropdown-border-color: black;
         display: block;
         z-index: 101;
         list-style: none;
-        margin-right: 4rem;
+        margin-right: 3em;
         li {
           a {
+            font-size: 1.2em;
             padding: 2em 1em 2em 1em;
             color: #fff;
           }
@@ -77,6 +82,9 @@ $dropdown-border-color: black;
     }
 
     &-buttonContainer {
+      @media screen and (max-width: $switch-size) {
+        margin-left: 35em;
+      }
       display: inline-block;
       padding: 1em;
       right: 0;
@@ -97,6 +105,9 @@ $dropdown-border-color: black;
       }
 
       &__search {
+        @media screen and (max-width: $switch-size) {
+          display: none;
+        }
         // display: inline-block;
         // background-color: $original-background-color;
         // margin: 0 1em 0 1em;
@@ -131,6 +142,9 @@ $dropdown-border-color: black;
         }
       }
       &__login {
+        @media screen and (max-width: $switch-size) {
+          display: none;
+        }
         // display: inline-block;
         // background-color: $original-background-color;
         // margin: 0 1em 0 0;

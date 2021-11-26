@@ -1,29 +1,31 @@
-.dropdown {
-  display: inline-block;
-  li {
+.container {
+  width: 100%;
+  .dropdown {
     display: inline-block;
-    position: relative;
-    a {
+    li {
       display: inline-block;
-    }
-    &:hover > ul,
-    ul:hover {
-      visibility: visible;
-      opacity: 1;
-      display: inline;
-      width: auto;
-    }
-    ul {
-      visibility: hidden;
-      opacity: 0;
-      display: none;
-      position: absolute;
-      left: 0%;
-      top: 100%;
+      position: relative;
+      a {
+        display: inline-block;
+      }
+      &:hover > ul,
+      ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: inline;
+        width: auto;
+      }
+      ul {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        position: absolute;
+        left: 0%;
+        top: 100%;
+      }
     }
   }
 }
-
 .menu-icon {
   display: none;
   background-color: #124957;
@@ -39,37 +41,48 @@
   .menu-icon {
     display: inline-block;
   }
-  .dropdown {
-    display: none;
-    &.active {
-      position: absolute;
-      display: block;
-      left: 0;
-      z-index: 102;
-      width: 100vw;
-      li {
+  .container {
+    .dropdown {
+      display: none;
+      &.active {
+        background-color: black;
+        padding: 3em 1em 1em 1em;
         display: block;
-        position: relative;
-        height: max-content;
-        a {
-          width: 100%;
-          text-align: center;
+        // apply a border between each menu item
+        > li + li {
+          border-top: 1px solid #ccc;
         }
-
-        &:hover > ul,
-        ul:hover {
+        position: absolute;
+        display: block;
+        left: 0;
+        z-index: 102;
+        width: 100vw;
+        li {
+          opacity: 0.9;
           display: block;
-        }
-        ul {
-          //display: block;
-          width: 100vw;
           position: relative;
-          li {
+          height: max-content;
+          background-color: #5470c6;
+          a {
+            width: 100%;
+            text-align: center;
+          }
+
+          &:hover > ul,
+          ul:hover {
+            display: block;
+          }
+          ul {
+            //display: block;
+            width: 100vw;
             position: relative;
-            a {
-              text-align: center;
-              display: block;
-              width: 100%;
+            li {
+              position: relative;
+              a {
+                text-align: center;
+                display: block;
+                width: 100%;
+              }
             }
           }
         }

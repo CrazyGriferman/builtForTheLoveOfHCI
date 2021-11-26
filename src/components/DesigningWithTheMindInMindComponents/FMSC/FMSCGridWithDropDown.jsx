@@ -17,26 +17,28 @@ export function FMSCGridWithDropDown(props) {
             <i className={click ? "fa  fa-times" : "fa  fa-bars"} />
           </a>
         </div>
-        <ul className={click ? "dropdown active" : "dropdown"}>
-          {props.props.map((item) => (
-            <li>
-              <a href="#" className="dropdown-select">
-                {item.category}
-              </a>
-              {item.dropdown && (
-                <ul className="dropdown-list">
-                  {item.dropdown.map((list) => (
-                    <li>
-                      <a className="dropdown-list__link" href={list.url}>
-                        {list.text}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
+        <div class="container">
+          <ul className={click ? "dropdown active" : "dropdown"}>
+            {props.props.map((item) => (
+              <li>
+                <a href="#" className="dropdown-select">
+                  {item.category}
+                </a>
+                {item.dropdown && (
+                  <ul className="dropdown-list">
+                    {item.dropdown.map((list) => (
+                      <li>
+                        <a className="dropdown-list__link" href={list.url}>
+                          {list.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
       </>
     )
   );

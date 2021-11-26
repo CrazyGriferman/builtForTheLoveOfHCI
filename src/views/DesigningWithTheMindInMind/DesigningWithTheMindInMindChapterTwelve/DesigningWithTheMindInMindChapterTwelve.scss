@@ -1,10 +1,31 @@
+$hover-color: #01c2d5;
+$icon-hover-color: #246192;
+$original-background-color: #246192;
+$navbar-background-color: #4779a3;
+$text-color: #246192;
+$title-color: #dde5ed;
+$dropdown-border-color: black;
+
+@mixin icon-style-set {
+  display: inline-block;
+  background-color: $original-background-color;
+  margin: 0 0 0 1em;
+  a {
+    padding: 0.5em 1em 0.5em 1em;
+    color: #fff;
+    &:hover {
+      background-color: $icon-hover-color;
+    }
+  }
+}
+
 .designingTwelveFMSCWrap {
   &-navbar {
-    display: block;
+    display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: #4779a3;
+    background: $navbar-background-color;
     &__logo {
       // using vertical-align to deal with align problem in inline-block mode
       vertical-align: top;
@@ -12,7 +33,7 @@
       display: inline-block;
       align: center;
       img {
-        background-color: #4779a3;
+        background-color: $navbar-background-color;
         padding: 0.2em 1em 0.2em 1em;
       }
     }
@@ -21,10 +42,10 @@
       overflow: visible;
       font-size: 14px;
       ul {
+        display: block;
         z-index: 101;
         list-style: none;
-        width: 50vw;
-        margin-right: 5rem;
+        margin-right: 4rem;
         li {
           a {
             padding: 2em 1em 2em 1em;
@@ -33,7 +54,7 @@
           &:hover {
             background-color: #fff;
             a {
-              color: #4779a3;
+              color: $text-color;
               background-color: #fff;
             }
           }
@@ -41,12 +62,12 @@
             li {
               a {
                 border-style: hidden hidden solid hidden;
-                border-color: black;
+                border-color: $dropdown-border-color;
                 border-width: thin;
                 width: 13em;
                 padding: 0.5em;
                 &:hover {
-                  background-color: #dde5ed;
+                  background-color: $hover-color;
                 }
               }
             }
@@ -57,10 +78,13 @@
 
     &-buttonContainer {
       display: inline-block;
+      padding: 1em;
+      right: 0;
+      height: auto;
       button {
         top: 3.5%;
         display: inline;
-        color: #246192;
+        color: $text-color;
         background-color: #fff;
         margin: 0;
         padding: 0.5em 1em;
@@ -68,97 +92,107 @@
         font-size: 18px;
         margin: 0.2em;
         &:hover {
-          background-color: #02c1d5;
+          background-color: $hover-color;
         }
       }
-    }
-    &__search {
-      display: inline-block;
-      background-color: #124975;
-      margin: 0 1em 0 1em;
-      a {
-        padding: 0.5em 1em 0.5em 1em;
-        color: #fff;
-        &:hover {
-          background-color: #246192;
+
+      &__search {
+        // display: inline-block;
+        // background-color: $original-background-color;
+        // margin: 0 1em 0 1em;
+        // a {
+        //   padding: 0.5em 1em 0.5em 1em;
+        //   color: #fff;
+        //   &:hover {
+        //     background-color: $icon-hover-color;
+        //   }
+        // }
+        //位置
+        @include icon-style-set;
+        ul {
+          left: -350%;
+          top: 100%;
         }
-      }
-      //位置
-      ul {
-        left: -350%;
-        top: 100%;
-      }
-      &_form {
-        padding: 1em;
-        background-color: #124975;
-        display: flex;
-        span {
-          button {
-            width: 3em;
-            height: 3em;
-          }
-        }
-      }
-    }
-    &__login {
-      display: inline-block;
-      background-color: #124975;
-      color: black;
-      margin: 0 1em 0 0;
-      a {
-        padding: 0.5em 1em 0.5em 1em;
-        color: #fff;
-        &:hover {
-          background-color: #246192;
-        }
-      }
-      ul {
-        left: -150%;
-        top: 100%;
-      }
-      &_form {
-        padding: 1em;
-        background-color: white;
-        display: block;
-        &_group {
-          display: line;
-          padding: 0.5em 0 0.5em 0;
-          position: relative;
-          a {
-            text-align: center;
-            //padding: 0.5em 1em 0.5em 1em;
-            color: #fff;
-            background-color: #246192;
-            &:hover {
-              background-color: #02c1d5;
-            }
+        &_form {
+          padding: 1em;
+          background-color: $original-background-color;
+          display: flex;
+          input {
+            font-size: 1.2em;
           }
           span {
-            display: none;
-          }
-          input {
-            height: 3em;
-          }
-          button {
-            display: block;
-            color: #fff;
-            width: 100%;
-            padding: 0.5em 1em 0.5em 1em;
-            background-color: #246192;
-            &:hover {
-              background-color: #02c1d5;
+            button {
+              padding: 0;
+              margin: 0;
+              width: 3em;
+              height: 3em;
             }
           }
         }
-        &__divider {
-          background-color: #e5e5e5;
-          margin: 0.5em 0;
-          height: 1px;
+      }
+      &__login {
+        // display: inline-block;
+        // background-color: $original-background-color;
+        // margin: 0 1em 0 0;
+        // a {
+        //   padding: 0.5em 1em 0.5em 1em;
+        //   color: #fff;
+        //   &:hover {
+        //     background-color: $icon-hover-color;
+        //   }
+        // }
+        @include icon-style-set;
+        ul {
+          left: -150%;
+          top: 100%;
         }
-        &_help {
-          a {
-            font-size: 16px;
-            left: 100%;
+        &_form {
+          padding: 1em;
+          background-color: white;
+          display: block;
+          &_group {
+            display: line;
+            padding: 0.5em 0 0.5em 0;
+            position: relative;
+            a {
+              display: block;
+              width: 100%;
+              text-align: center;
+              //padding: 0.5em 1em 0.5em 1em;
+              color: #fff;
+              background-color: $original-background-color;
+              &:hover {
+                background-color: $hover-color;
+              }
+            }
+            span {
+              display: none;
+            }
+            input {
+              height: 3em;
+              font-size: 1.2em;
+            }
+            button {
+              display: block;
+              color: #fff;
+              width: 100%;
+              padding: 0.5em 1em 0.5em 1em;
+              background-color: $original-background-color;
+              &:hover {
+                background-color: $hover-color;
+              }
+            }
+          }
+          &__divider {
+            background-color: #e5e5e5;
+            margin: 0.5em 0;
+            height: 1px;
+          }
+          &_help {
+            a {
+              font-size: 16px;
+              left: 100%;
+            }
           }
         }
       }
@@ -200,7 +234,7 @@
           font-size: 2em;
         }
         &:hover {
-          background-color: #02c1d5;
+          background-color: $hover-color;
         }
       }
     }
@@ -238,7 +272,7 @@
     }
 
     li {
-      background-color: #246192;
+      background-color: $original-background-color;
       width: 22vw;
       display: inline-block;
       position: relative;
@@ -250,7 +284,7 @@
         color: #fff;
       }
       &:hover {
-        background-color: #02c1d5;
+        background-color: $hover-color;
       }
     }
   }
@@ -258,12 +292,12 @@
   &-fluid {
     padding: 2em;
     position: relative;
-    background-color: #dde5ed;
+    background-color: $title-color;
 
     h1 {
       font-size: 32px;
       text-align: center;
-      color: #246192;
+      color: $text-color;
     }
     &:after {
       width: 0;
@@ -274,7 +308,7 @@
       bottom: -29px;
       border-left: 48px solid transparent;
       border-right: 48px solid transparent;
-      border-top: 29px solid #dde5ed;
+      border-top: 29px solid $title-color;
       margin-left: -48px;
       z-index: 100;
     }

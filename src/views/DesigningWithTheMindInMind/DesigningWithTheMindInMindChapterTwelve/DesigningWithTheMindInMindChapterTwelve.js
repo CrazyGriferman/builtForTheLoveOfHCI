@@ -205,7 +205,7 @@ export function DesigningWithTheMindInMindChapterTwelve() {
   const SearchIcon = () => <i className="fa fa-search"></i>;
 
   const SearchForm = () => (
-    <form className="designingTwelveFMSCWrap-navbar__search_form">
+    <form className="designingTwelveFMSCWrap-navbar-buttonContainer__search_form">
       <input type="text" name="query" placeholder="Search" />
       <span>
         <button type="submit">
@@ -218,23 +218,23 @@ export function DesigningWithTheMindInMindChapterTwelve() {
   const LoginIcon = () => <i className="fa fa-lock"> login</i>;
 
   const LoginForm = () => (
-    <form className="designingTwelveFMSCWrap-navbar__login_form">
-      <div className="designingTwelveFMSCWrap-navbar__login_form_group">
+    <form className="designingTwelveFMSCWrap-navbar-buttonContainer__login_form">
+      <div className="designingTwelveFMSCWrap-navbar-buttonContainer__login_form_group">
         <input type="email" placeholder="Email address" />
         <span>Email address is required.</span>
       </div>
-      <div className="designingTwelveFMSCWrap-navbar__login_form_group">
+      <div className="designingTwelveFMSCWrap-navbar-buttonContainer__login_form_group">
         <input type="password" placeholder="Password" />
         <span>Password is required.</span>
       </div>
-      <div className="designingTwelveFMSCWrap-navbar__login_form_group__help">
+      <div className="designingTwelveFMSCWrap-navbar-buttonContainer__login_form_group__help">
         Forgot password?
       </div>
-      <div className="designingTwelveFMSCWrap-navbar__login_form_group">
+      <div className="designingTwelveFMSCWrap-navbar-buttonContainer__login_form_group">
         <button type="submit">Log in</button>
       </div>
-      <div className="designingTwelveFMSCWrap-navbar__login_form__divider"></div>
-      <div className="designingTwelveFMSCWrap-navbar__login_form_group">
+      <div className="designingTwelveFMSCWrap-navbar-buttonContainer__login_form__divider"></div>
+      <div className="designingTwelveFMSCWrap-navbar-buttonContainer__login_form_group">
         <a href="#">Create Account</a>
       </div>
     </form>
@@ -316,18 +316,18 @@ export function DesigningWithTheMindInMindChapterTwelve() {
         <div className="designingTwelveFMSCWrap-navbar-buttonContainer">
           <button>Donate</button>
           <button>Volunteer</button>
-        </div>
-        <div className="designingTwelveFMSCWrap-navbar__search">
-          <FMSCDropdownForm
-            dropdownIcon={<SearchIcon />}
-            dropdownForm={<SearchForm />}
-          />
-        </div>
-        <div className="designingTwelveFMSCWrap-navbar__login">
-          <FMSCDropdownForm
-            dropdownIcon={<LoginIcon />}
-            dropdownForm={<LoginForm />}
-          />
+          <div className="designingTwelveFMSCWrap-navbar-buttonContainer__search">
+            <FMSCDropdownForm
+              dropdownIcon={<SearchIcon />}
+              dropdownForm={<SearchForm />}
+            />
+          </div>
+          <div className="designingTwelveFMSCWrap-navbar-buttonContainer__login">
+            <FMSCDropdownForm
+              dropdownIcon={<LoginIcon />}
+              dropdownForm={<LoginForm />}
+            />
+          </div>
         </div>
       </nav>
       <main>

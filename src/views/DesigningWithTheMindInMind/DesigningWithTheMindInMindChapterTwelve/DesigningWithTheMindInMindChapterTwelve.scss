@@ -7,6 +7,25 @@ $title-color: #dde5ed;
 $dropdown-border-color: black;
 $switch-size: 1315px;
 
+@mixin link-colors($normal, $hover: $normal, $visited: $normal) {
+  color: $normal;
+  &:hover {
+    color: $hover;
+  }
+  &:visited {
+    color: $visited;
+  }
+}
+
+@mixin no-buillets {
+  list-style: none;
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px;
+  }
+}
+
 @mixin icon-style-set {
   display: inline-block;
   background-color: $original-background-color;

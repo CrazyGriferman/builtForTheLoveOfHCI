@@ -49,7 +49,7 @@ export function MainPage() {
     <>
       <div className="book">
         <div className="pages">
-          <div className="page ">
+          <div className="page cover">
             <h1>HCI Gallery</h1>
             <section>Interactive ARIA-based websites demo</section>
           </div>
@@ -75,12 +75,6 @@ export function MainPage() {
               <h1>Chapter 7</h1>
               <h1>Chapter 8</h1>
               <h1>Chapter 9</h1>
-              <h1>Chapter 10</h1>
-              <h1>Chapter 11</h1>
-              <h1>Chapter 12</h1>
-              <h1>Chapter 13</h1>
-              <h1>Chapter 14</h1>
-              <h1>Chapter 15</h1>
             </div>
           </div>
           <div className="page pageCover">

@@ -1,10 +1,21 @@
 import React from "react";
+import GenerateStar from "../../../components/GenerateStar";
 import "./ChapterTwoSimilarityFiveStar.css";
+import shuihu from "../../../assets/shuihu.json";
 
-function ChapterTwoSimilarityFiveStar() {
+function ChapterTwoSimilarityFiveStar({ defaultState }) {
   return (
     <section>
+      <GenerateStar defaultState={shuihu} />
+    </section>
+  );
+}
+
+export default ChapterTwoSimilarityFiveStar;
+
+/* <section>
       <div class="rate">
+        
         <input type="radio" id="star5" name="rate" value="5" />
         <label for="star5" title="text">
           5 stars
@@ -31,8 +42,4 @@ function ChapterTwoSimilarityFiveStar() {
           1 star
         </label>
       </div>
-    </section>
-  );
-}
-
-export default ChapterTwoSimilarityFiveStar;
+    </section> */

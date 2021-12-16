@@ -1,0 +1,542 @@
+[
+  {
+    "name": "宋江",
+    "nickName": "及时雨",
+    "star": "天魁星"
+  },
+  {
+    "name": "卢俊义",
+    "nickName": "玉麒麟",
+    "star": "天罡星"
+  },
+  {
+    "name": "吴用",
+    "nickName": "智多星",
+    "star": "天机星"
+  },
+  {
+    "name": "公孙胜",
+    "nickName": "入云龙",
+    "star": "天闲星"
+  },
+  {
+    "name": "关胜",
+    "nickName": "大刀",
+    "star": "天勇星"
+  },
+  {
+    "name": "林冲",
+    "nickName": "豹子头",
+    "star": "天雄星"
+  },
+  {
+    "name": "秦明",
+    "nickName": "霹雳火",
+    "star": "天猛星"
+  },
+  {
+    "name": "呼延灼",
+    "nickName": "双鞭",
+    "star": "天威星"
+  },
+  {
+    "name": "花荣",
+    "nickName": "小李广",
+    "star": "天英星"
+  },
+  {
+    "name": "柴进",
+    "nickName": "小旋风",
+    "star": "天贵星"
+  },
+  {
+    "name": "李应",
+    "nickName": "扑天雕",
+    "star": "天富星"
+  },
+  {
+    "name": "朱仝",
+    "nickName": "美髯公",
+    "star": "天满星"
+  },
+  {
+    "name": "鲁智深",
+    "nickName": "花和尚",
+    "star": "天孤星"
+  },
+  {
+    "name": "武松",
+    "nickName": "行者",
+    "star": "天伤星"
+  },
+  {
+    "name": "董平",
+    "nickName": "双枪将",
+    "star": "天立星"
+  },
+  {
+    "name": "张清",
+    "nickName": "没羽箭",
+    "star": "天捷星"
+  },
+  {
+    "name": "杨志",
+    "nickName": "青面兽",
+    "star": "天暗星"
+  },
+  {
+    "name": "徐宁",
+    "nickName": "金枪手",
+    "star": "天佑星"
+  },
+  {
+    "name": "索超",
+    "nickName": "急先锋",
+    "star": "天空星"
+  },
+  {
+    "name": "戴宗",
+    "nickName": "神行太保",
+    "star": "天速星"
+  },
+  {
+    "name": "刘唐",
+    "nickName": "赤发鬼",
+    "star": "天异星"
+  },
+  {
+    "name": "李逵",
+    "nickName": "黑旋风",
+    "star": "天杀星"
+  },
+  {
+    "name": "史进",
+    "nickName": "九纹龙",
+    "star": "天微星"
+  },
+  {
+    "name": "穆弘",
+    "nickName": "没遮拦",
+    "star": "天究星"
+  },
+  {
+    "name": "雷横",
+    "nickName": "插翅虎",
+    "star": "天退星"
+  },
+  {
+    "name": "李俊",
+    "nickName": "混江龙",
+    "star": "天寿星"
+  },
+  {
+    "name": "阮小二",
+    "nickName": "立地太岁",
+    "star": "天剑星"
+  },
+  {
+    "name": "阮小五",
+    "nickName": "短命二郎",
+    "star": "天罪星"
+  },
+  {
+    "name": "阮小七",
+    "nickName": "活阎罗",
+    "star": "天败星"
+  },
+  {
+    "name": "张横",
+    "nickName": "船火儿",
+    "star": "天平星"
+  },
+  {
+    "name": "张顺",
+    "nickName": "浪里白条",
+    "star": "天损星"
+  },
+  {
+    "name": "杨雄",
+    "nickName": "病关索",
+    "star": "天牢星"
+  },
+  {
+    "name": "石秀",
+    "nickName": "拚命三郎",
+    "star": "天慧星"
+  },
+  {
+    "name": "解珍",
+    "nickName": "两头蛇",
+    "star": "天暴星"
+  },
+  {
+    "name": "解宝",
+    "nickName": "双尾蝎",
+    "star": "天哭星"
+  },
+  {
+    "name": "燕青",
+    "nickName": "浪子",
+    "star": "天巧星"
+  },
+  {
+    "name": "朱武",
+    "nickName": "神机军师",
+    "star": "地魁星"
+  },
+  {
+    "name": "黄信",
+    "nickName": "镇三山",
+    "star": "地煞星"
+  },
+  {
+    "name": "孙立",
+    "nickName": "病尉迟",
+    "star": "地勇星"
+  },
+  {
+    "name": "宣赞",
+    "nickName": "丑郡马",
+    "star": "地杰星"
+  },
+  {
+    "name": "郝思文",
+    "nickName": "井木犴",
+    "star": "地雄星"
+  },
+  {
+    "name": "韩滔",
+    "nickName": "百胜将",
+    "star": "地威星"
+  },
+  {
+    "name": "彭玘",
+    "nickName": "天目将",
+    "star": "地英星"
+  },
+  {
+    "name": "单廷珪",
+    "nickName": "圣水将",
+    "star": "地奇星"
+  },
+  {
+    "name": "魏定国",
+    "nickName": "神火将",
+    "star": "地猛星"
+  },
+  {
+    "name": "萧让",
+    "nickName": "圣手书生",
+    "star": "地文星"
+  },
+  {
+    "name": "裴宣",
+    "nickName": "铁面孔目",
+    "star": "地正星"
+  },
+  {
+    "name": "欧鹏",
+    "nickName": "摩云金翅",
+    "star": "地阔星"
+  },
+  {
+    "name": "邓飞",
+    "nickName": "火眼狻猊",
+    "star": "地阖星"
+  },
+  {
+    "name": "燕顺",
+    "nickName": "锦毛虎",
+    "star": "地强星"
+  },
+  {
+    "name": "杨林",
+    "nickName": "锦豹子",
+    "star": "地暗星"
+  },
+  {
+    "name": "凌振",
+    "nickName": "轰天雷",
+    "star": "地轴星"
+  },
+  {
+    "name": "蒋敬",
+    "nickName": "神算子",
+    "star": "地会星"
+  },
+  {
+    "name": "吕方",
+    "nickName": "小温侯",
+    "star": "地佐星"
+  },
+  {
+    "name": "郭盛",
+    "nickName": "赛仁贵",
+    "star": "地佑星"
+  },
+  {
+    "name": "安道全",
+    "nickName": "神医",
+    "star": "地灵星"
+  },
+  {
+    "name": "皇甫端",
+    "nickName": "紫髯伯",
+    "star": "地兽星"
+  },
+  {
+    "name": "王英",
+    "nickName": "矮脚虎",
+    "star": "地微星"
+  },
+  {
+    "name": "扈三娘",
+    "nickName": "一丈青",
+    "star": "地慧星"
+  },
+  {
+    "name": "鲍旭",
+    "nickName": "丧门神",
+    "star": "地暴星"
+  },
+  {
+    "name": "樊瑞",
+    "nickName": "混世魔王",
+    "star": "地然星"
+  },
+  {
+    "name": "孔明",
+    "nickName": "毛头星",
+    "star": "地猖星"
+  },
+  {
+    "name": "孔亮",
+    "nickName": "独火星",
+    "star": "地狂星"
+  },
+  {
+    "name": "项充",
+    "nickName": "八臂那吒",
+    "star": "地飞星"
+  },
+  {
+    "name": "李衮",
+    "nickName": "飞天大圣",
+    "star": "地走星"
+  },
+  {
+    "name": "金大坚",
+    "nickName": "玉臂匠",
+    "star": "地巧星"
+  },
+  {
+    "name": "马麟",
+    "nickName": "铁笛仙",
+    "star": "地明星"
+  },
+  {
+    "name": "童威",
+    "nickName": "出洞蛟",
+    "star": "地进星"
+  },
+  {
+    "name": "童猛",
+    "nickName": "翻江蜃",
+    "star": "地退星"
+  },
+  {
+    "name": "孟康",
+    "nickName": "玉幡竿",
+    "star": "地满星"
+  },
+  {
+    "name": "侯健",
+    "nickName": "通臂猿",
+    "star": "地遂星"
+  },
+  {
+    "name": "陈达",
+    "nickName": "跳涧虎",
+    "star": "地周星"
+  },
+  {
+    "name": "杨春",
+    "nickName": "白花蛇",
+    "star": "地隐星"
+  },
+  {
+    "name": "郑天寿",
+    "nickName": "白面郎君",
+    "star": "地异星"
+  },
+  {
+    "name": "陶宗旺",
+    "nickName": "九尾龟",
+    "star": "地理星"
+  },
+  {
+    "name": "宋清",
+    "nickName": "铁扇子",
+    "star": "地俊星"
+  },
+  {
+    "name": "乐和",
+    "nickName": "铁叫子",
+    "star": "地乐星"
+  },
+  {
+    "name": "龚旺",
+    "nickName": "花项虎",
+    "star": "地捷星"
+  },
+  {
+    "name": "丁得孙",
+    "nickName": "中箭虎",
+    "star": "地速星"
+  },
+  {
+    "name": "穆春",
+    "nickName": "小遮拦",
+    "star": "地镇星"
+  },
+  {
+    "name": "曹正",
+    "nickName": "操刀鬼",
+    "star": "地稽星"
+  },
+  {
+    "name": "宋万",
+    "nickName": "云里金刚",
+    "star": "地魔星"
+  },
+  {
+    "name": "杜迁",
+    "nickName": "摸着天",
+    "star": "地妖星"
+  },
+  {
+    "name": "薛永",
+    "nickName": "病大虫",
+    "star": "地幽星"
+  },
+  {
+    "name": "施恩",
+    "nickName": "金眼彪",
+    "star": "地伏星"
+  },
+  {
+    "name": "周通",
+    "nickName": "小霸王",
+    "star": "地空星"
+  },
+  {
+    "name": "李忠",
+    "nickName": "打虎将",
+    "star": "地僻星"
+  },
+  {
+    "name": "杜兴",
+    "nickName": "鬼脸儿",
+    "star": "地全星"
+  },
+  {
+    "name": "汤隆",
+    "nickName": "金钱豹子",
+    "star": "地孤星"
+  },
+  {
+    "name": "邹渊",
+    "nickName": "出林龙",
+    "star": "地短星"
+  },
+  {
+    "name": "邹润",
+    "nickName": "独角龙",
+    "star": "地角星"
+  },
+  {
+    "name": "朱贵",
+    "nickName": "旱地忽律",
+    "star": "地囚星"
+  },
+  {
+    "name": "朱富",
+    "nickName": "笑面虎",
+    "star": "地藏星"
+  },
+  {
+    "name": "蔡福",
+    "nickName": "铁臂膊",
+    "star": "地平星"
+  },
+  {
+    "name": "蔡庆",
+    "nickName": "一枝花",
+    "star": "地损星"
+  },
+  {
+    "name": "李云",
+    "nickName": "青眼虎",
+    "star": "地察星"
+  },
+  {
+    "name": "李立",
+    "nickName": "催命判官",
+    "star": "地奴星"
+  },
+  {
+    "name": "焦挺",
+    "nickName": "没面目",
+    "star": "地恶星"
+  },
+  {
+    "name": "石勇",
+    "nickName": "石将军",
+    "star": "地丑星"
+  },
+  {
+    "name": "孙新",
+    "nickName": "小尉迟",
+    "star": "地数星"
+  },
+  {
+    "name": "顾大嫂",
+    "nickName": "母大虫",
+    "star": "地阴星"
+  },
+  {
+    "name": "张青",
+    "nickName": "菜园子",
+    "star": "地刑星"
+  },
+  {
+    "name": "孙二娘",
+    "nickName": "母夜叉",
+    "star": "地壮星"
+  },
+  {
+    "name": "王定六",
+    "nickName": "活闪婆",
+    "star": "地劣星"
+  },
+  {
+    "name": "郁保四",
+    "nickName": "险道神",
+    "star": "地健星"
+  },
+  {
+    "name": "白胜",
+    "nickName": "白日鼠",
+    "star": "地耗星"
+  },
+  {
+    "name": "时迁",
+    "nickName": "鼓上蚤",
+    "star": "地贼星"
+  },
+  {
+    "name": "段景住",
+    "nickName": "金毛犬",
+    "star": "地狗星"
+  }
+]
